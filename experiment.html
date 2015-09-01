@@ -13,6 +13,18 @@
         <script src="js/vendor/modernizr-2.8.3.min.js"></script>
     </head>
     <body class="experiment-page">
+
+        <div class="blackout flex">
+          <div>
+          <div class="text-white text-large">
+            Take a break.  Take a KitKat.
+          </div>
+          <div class="text-white">
+            Resuming in <span class="time-remaining-text"></span> seconds..
+          </div>
+        </div>
+        </div>
+
         <!--[if lt IE 8]>
             <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
         <![endif]-->
@@ -114,9 +126,51 @@
                 } else {
                     // Last trial completed
                     ACPToolKit.downloadTrialResults(trialData);
+                    // TODO insert code here to go to next block
                     window.location = 'questionnaire-post.html';
                 }
             }
+
+            // object to use when taking breaks
+            var pauseScreen = (function() {
+              $('.blackout').hide();
+
+              var isPaused = false;
+              var elapsed = 0;
+              var timerEvent;
+
+              var start = function(duration) {
+                var duration = duration || 0;
+                var startTime = new Date().getTime();
+                if (isPaused) return;
+                isPaused = true;
+                $('.blackout').show();
+
+                timerEvent = setInterval(function() {
+                  var currDuration = new Date().getTime() - startTime;
+                  $('.time-remaining-text').text(Math.round((duration - currDuration) / 1000));
+                  if (currDuration > duration) {
+                    isPaused = false;
+                    $('.blackout').hide();
+                    clearInterval(timerEvent);
+                  }
+                }, 1000);
+              };
+
+              var stop = function() {
+                if (!isPaused) return;
+                isPaused = false;
+                if (timerEvent) clearInterval(timerEvent);
+                $('.blackout').hide();
+              };
+
+              return {
+                isPaused: isPaused, // get state
+                start: start,       // start pause with given duration
+                stop: stop          // abort pause
+              };
+            })();
+
 
             $(document).ready(function () {
                 $.get('data/experiments.json', function (data) {

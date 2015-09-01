@@ -277,3 +277,28 @@ textarea {
         page-break-after: avoid;
     }
 }
+
+
+/*************************/
+
+.flex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.text-white {
+  color: #fff;
+}
+
+.text-large {
+  font-size: 3em;
+}
+
+.blackout {
+  background: rgba(0, 0, 0, 0.5);;
+  width: 100%;
+  height: 100%;
+  z-index: 9999;
+  position: fixed;
+}
