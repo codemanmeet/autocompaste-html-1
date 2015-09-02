@@ -1,188 +1,294 @@
 <!doctype html>
 <html class="no-js" lang="">
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="x-ua-compatible" content="ie=edge">
-        <title>CS4249 Assignment 1</title>
-        <meta name="description" content="">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="css/normalize.css">
-        <link rel="stylesheet" href="css/bootstrap.min.css">
-        <link rel="stylesheet" href="css/main.css">
-        <link rel="stylesheet" href="css/style.css">
-        <script src="js/vendor/modernizr-2.8.3.min.js"></script>
-    </head>
-    <body class="experiment-page">
 
-        <div class="blackout flex">
-          <div>
-          <div class="text-white text-large">
-            Take a break.  Take a KitKat.
-          </div>
-          <div class="text-white">
-            Resuming in <span class="time-remaining-text"></span> seconds..
-          </div>
-        </div>
-        </div>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <title>CS4249 Assignment 1</title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="css/style.css">
+  <script src="js/vendor/modernizr-2.8.3.min.js"></script>
+</head>
 
-        <!--[if lt IE 8]>
+<body class="experiment-page">
+
+  <div class="blackout flex">
+    <div>
+      <div class="text-white text-large">
+        Take a break. Take a KitKat.
+      </div>
+      <div class="text-white">
+        Resuming in
+        <span class="time-remaining-text"></span> seconds..
+      </div>
+    </div>
+  </div>
+
+  <!--[if lt IE 8]>
             <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
         <![endif]-->
-        <nav class="navbar navbar-default">
-            <div class="container">
-                <div class="collapse navbar-collapse">
-                    <ul class="nav navbar-nav">
-                        <li><a href="index.html">Welcome</a></li>
-                        <li><a href="questionnaire-pre.html">Pre Questionnaire</a></li>
-                        <li><a href="instructions.html">Instructions</a></li>
-                        <li class="active"><a href="experiment.html">Experiment</a></li>
-                        <li><a href="questionnaire-post.html">Post Questionnaire</a></li>
-                    </ul>
-                </div>
-            </div>
-        </nav>
+  <nav class="navbar navbar-default">
+    <div class="container">
+      <div class="collapse navbar-collapse">
+        <ul class="nav navbar-nav">
+          <li><a href="index.html">Welcome</a></li>
+          <li><a href="questionnaire-pre.html">Pre Questionnaire</a></li>
+          <li><a href="instructions.html">Instructions</a></li>
+          <li class="active"><a href="experiment.html">Experiment</a></li>
+          <li><a href="questionnaire-post.html">Post Questionnaire</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
 
-        <div class="container-fluid">
-            <div class="row">
-                <div class="col-md-3">
-                    <h1>Copy-Paste Experiment</h1>
-                    <hr>
-                    <table class="table table-bordered">
-                        <tbody>
-                            <tr>
-                                <td>Technique</td>
-                                <td><span class="js-expt-technique">ACP</span></td>
-                            </tr>
-                            <tr>
-                                <td>Granularity</td>
-                                <td><span class="js-expt-granularity">Phrase</span></td>
-                            </tr>
-                            <tr>
-                                <td>Independent Variable 3</td>
-                                <td>???</td>
-                            </tr>
-                            <tr>
-                                <td>Trial</td>
-                                <td><span class="js-expt-current-trial"></span> / <span class="js-expt-num-trials"></span></td>
-                            </tr>
-                        </tbody>
-                    </table>
-                    <p>Please copy-paste the following <span class="js-expt-granularity">phrase</span> using the <span class="js-expt-technique">AUTOCOMPASTE</span> technique from one of the open windows.</p>
-                    <div id="stimuli" class="alert alert-danger js-expt-stimuli">This is a long stimuli!</div>
-                    <button class="btn btn-primary btn-lg" onclick="next()">Next Task</button>
-                </div>
-                <div id="autocompaste" class="col-sm-9">
-                    <div id="autocompaste-display"></div>
-                </div>
-            </div>
-        </div>
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-md-3">
+        <h1>Copy-Paste Experiment</h1>
+        <hr>
+        <table class="table table-bordered">
+          <tbody>
+            <tr>
+              <td>Technique</td>
+              <td>
+                <span class="js-expt-technique">ACP</span>
+              </td>
+            </tr>
+            <tr>
+              <td>Granularity</td>
+              <td>
+                <span class="js-expt-granularity">Phrase</span>
+              </td>
+            </tr>
+            <tr>
+              <td>Independent Variable 3</td>
+              <td>???</td>
+            </tr>
+            <tr>
+              <td>Trial</td>
+              <td>
+                <span class="js-expt-current-trial"></span> /
+                <span class="js-expt-num-trials"></span>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+        <p>Please copy-paste the following
+          <span class="js-expt-granularity">phrase</span> using the
+          <span class="js-expt-technique">AUTOCOMPASTE</span> technique from one of the open windows.</p>
+          <p>브라우저 창에서 <span class="js-expt-technique"></span>를 사용하여 다음과 같은 <span class="js-expt-granularity"></span>를 복사 - 붙여 넣기하십시오.</p>
+        <div id="stimuli" class="alert alert-danger js-expt-stimuli">This is a long stimuli!</div>
+        <button class="btn btn-primary btn-lg" onclick="next()">Next Task</button>
+        <button class="btn btn-primary btn-lg" onclick="next(1)">Skip question</button>
+      </div>
+      <div id="autocompaste" class="col-sm-9">
+        <div id="autocompaste-display"></div>
+      </div>
+    </div>
+  </div>
 
-        <script src="js/vendor/jquery-1.11.2.min.js"></script>
-        <script src="js/plugins.js"></script>
-        <script src="js/main.js"></script>
-        <script src="js/WindowManager.js"></script>
-        <script src="js/autocompaste/engine.js"></script>
-        <script src="js/autocompaste/interface.js"></script>
-        <script src="js/autocompaste/editor.js"></script>
-        <script src="js/autocompaste/autocompaste.js"></script>
-        <script src="js/DataStorage.js"></script>
-        <script src="js/ACPToolKit.js"></script>
+  <script src="js/vendor/jquery-1.11.2.min.js"></script>
+  <script src="js/plugins.js"></script>
+  <script src="js/main.js"></script>
+  <script src="js/WindowManager.js"></script>
+  <script src="js/autocompaste/engine.js"></script>
+  <script src="js/autocompaste/interface.js"></script>
+  <script src="js/autocompaste/editor.js"></script>
+  <script src="js/autocompaste/autocompaste.js"></script>
+  <script src="js/DataStorage.js"></script>
+  <script src="js/ACPToolKit.js"></script>
 
-        <script>
+  <script>
+    var trialsData;
+    var currentTrial;
+    var totalNumberOfTrials;
+    var headers = ['Participant id', 'Technique', 'Granularity',
+      'Trial no', 'Stimuli', 'User Response', 'Trial Start Time',
+      'Trial End Time', 'Trial Time', 'Accuracy', 'Skipped'
+    ];
+    var trialData = [];
+    var pid;
 
-            var trialsData;
-            var currentTrial;
-            var totalNumberOfTrials;
-            var headers = ['Participant id', 'Technique', 'Granularity',
-                            'Trial no', 'Stimuli', 'User Response', 'Trial Start Time',
-                            'Trial End Time', 'Trial Time', 'Accuracy'];
-            var trialData = [];
-            var pid;
+    function next(skipped) {
+      if (currentTrial !== 0) {
+        var trialResult = ACPToolKit.getCurrentTrialState();
 
-            function next () {
-                if (currentTrial !== 0) {
-                    var trialResult = ACPToolKit.getCurrentTrialState();
+        var technique = trialResult.technique;
+        var granularity = trialResult.granularity;
+        var trialNum = currentTrial;
+        var stimuli = trialResult.stimuli;
+        var userResponse = trialResult.user_response;
+        var trialStartTime = trialResult.start_time;
+        var trialEndTime = trialResult.end_time;
+        var trialDuration = trialResult.duration;
+        var accuracy = stimuli === userResponse ? 1 : 0;
+        var skipped = skipped || 0; // defaults to unskipped
 
-                    var technique = trialResult.technique;
-                    var granularity = trialResult.granularity;
-                    var trialNum = currentTrial;
-                    var stimuli = trialResult.stimuli;
-                    var userResponse = trialResult.user_response;
-                    var trialStartTime = trialResult.start_time;
-                    var trialEndTime = trialResult.end_time;
-                    var trialDuration = trialResult.duration;
-                    var accuracy = stimuli === userResponse ? 1 : 0;
+        var row = [pid, technique, granularity, trialNum,
+          stimuli, userResponse, trialStartTime,
+          trialEndTime, trialDuration, accuracy, skipped
+        ];
+        trialData.push(row);
+      }
 
-                    var row = [pid, technique, granularity, trialNum,
-                                stimuli, userResponse, trialStartTime,
-                                trialEndTime, trialDuration, accuracy];
-                    trialData.push(row);
-                }
+      if (currentTrial < totalNumberOfTrials) {
+        ACPToolKit.presentTrial(trialsData[currentTrial]);
+        currentTrial += 1;
+        $('.js-expt-current-trial').text(currentTrial);
+      } else {
+        // Last trial completed
+        ACPToolKit.downloadTrialResults(trialData);
+        // TODO insert code here to go to next block
+        window.location = 'questionnaire-post.html';
+      }
+    }
 
-                if (currentTrial < totalNumberOfTrials) {
-                    ACPToolKit.presentTrial(trialsData[currentTrial]);
-                    currentTrial += 1;
-                    $('.js-expt-current-trial').text(currentTrial);
-                } else {
-                    // Last trial completed
-                    ACPToolKit.downloadTrialResults(trialData);
-                    // TODO insert code here to go to next block
-                    window.location = 'questionnaire-post.html';
-                }
-            }
+    // object to use when taking breaks
+    var pauseScreen = (function() {
+      $('.blackout').hide();
 
-            // object to use when taking breaks
-            var pauseScreen = (function() {
-              $('.blackout').hide();
+      var isPaused = false;
+      var elapsed = 0;
+      var timerEvent;
 
-              var isPaused = false;
-              var elapsed = 0;
-              var timerEvent;
+      var start = function(duration) {
+        var duration = duration || 0;
+        var startTime = new Date().getTime();
+        if (isPaused) return;
+        isPaused = true;
+        $('.blackout').show();
 
-              var start = function(duration) {
-                var duration = duration || 0;
-                var startTime = new Date().getTime();
-                if (isPaused) return;
-                isPaused = true;
-                $('.blackout').show();
+        timerEvent = setInterval(function() {
+          var currDuration = new Date().getTime() - startTime;
+          $('.time-remaining-text').text(Math.round((duration - currDuration) / 1000));
+          if (currDuration > duration) {
+            isPaused = false;
+            $('.blackout').hide();
+            clearInterval(timerEvent);
+          }
+        }, 1000);
+      };
 
-                timerEvent = setInterval(function() {
-                  var currDuration = new Date().getTime() - startTime;
-                  $('.time-remaining-text').text(Math.round((duration - currDuration) / 1000));
-                  if (currDuration > duration) {
-                    isPaused = false;
-                    $('.blackout').hide();
-                    clearInterval(timerEvent);
-                  }
-                }, 1000);
-              };
+      var stop = function() {
+        if (!isPaused) return;
+        isPaused = false;
+        if (timerEvent) clearInterval(timerEvent);
+        $('.blackout').hide();
+      };
 
-              var stop = function() {
-                if (!isPaused) return;
-                isPaused = false;
-                if (timerEvent) clearInterval(timerEvent);
-                $('.blackout').hide();
-              };
+      return {
+        isPaused: isPaused, // get state
+        start: start, // start pause with given duration
+        stop: stop // abort pause
+      };
+    })();
 
-              return {
-                isPaused: isPaused, // get state
-                start: start,       // start pause with given duration
-                stop: stop          // abort pause
-              };
-            })();
+    /**
+     * Translates between literal experiment type, and the sequence
+     * of experiment numbers.  A useful mapper singleton.
+     * @param  {[type]} function( [description]
+     * @return {[type]}           [description]
+     */
+    var translator = (function() {
+
+      var userToSeq = function(userId) {
+        var userMap = {
+          P01: "AP AQ AR BP BQ BR",
+          P02: "BP BQ BR AP AQ AR"
+        };
+        return userMap[userId];
+      };
+
+      /**
+       * Translates the description to a parseable 1-D
+       * array specifying the index of experiment to pull from.
+       *
+       * Used for counter-balancing, based on a sequence ID
+       * referenced by user ID.
+       *
+       * Strings should be of the form [method-type] [method-type] ...
+       *
+       * For instance, the string "AP AQ" translates to experiments
+       * [0,1] to conduct.
+       *
+       * Similarly, the string "AP AQ AR BP BQ BR" translates to experiments [0,1,2,3,4,5] to conduct.
+       *
+       * @param  {[type]} function( [description]
+       * @return {[type]}           [description]
+       */
+      var parseUser = function(code) {
+        var map = {
+          // the input method
+          A: 0,
+          B: 3,
+          // the text type
+          P: 0,
+          Q: 1,
+          R: 2
+        };
+
+        var acc = [],
+          val = 0;
+        for (var i = 0; i < code.length; i++) {
+          var token = code[i];
+          console.log(token);
+          if (token === " ") {
+            acc.push(val);
+            val = 0;
+          } else {
+            val += map[token];
+          }
+        }
+        acc.push(val);
+        return acc;
+      }
+
+      /**
+       *  Reorganizes an array based on an array of indexes.
+       *
+       * e.g console.log(translator.remap(data.experiments, [5,4,3,2,1,0]));
+       *
+       * @param  {[type]} arr The array to reorganize
+       * @return {[type]}     An array of indexes specifying how
+       * arr should be organized.
+       */
+      var remap = function(arr, indexes) {
+        var newArr = [];
+        for (var i = 0; i < indexes.length; i++) {
+          newArr[i] = arr[indexes[i]];
+        }
+        return newArr;
+      }
+
+      // public ---
+      return {
+        userToSeq: userToSeq,
+        parseUser: parseUser,
+        remap: remap
+      };
+    })();
 
 
-            $(document).ready(function () {
-                $.get('data/experiments.json', function (data) {
-                    trialsData = data.experiments;
-                    currentTrial = 0;
-                    totalNumberOfTrials = trialsData.length;
-                    $('.js-expt-num-trials').text(totalNumberOfTrials);
-                    trialData.push(headers);
-                    next();
-                    pid = ACPToolKit.getCurrentParticipantId();
-                })
-            });
-        </script>
-    </body>
+    $(document).ready(function() {
+      $.get('data/experiments.json', function(data) {
+        var seq = translator.userToSeq("P02"); // trial sequence in words
+        var indexes = translator.parseUser(seq); // indexes to use
+        trialsData = translator.remap(data.experiments, indexes); // raw data
+        console.log(trialsData)
+
+        currentTrial = 0;
+        totalNumberOfTrials = trialsData.length;
+        $('.js-expt-num-trials').text(totalNumberOfTrials);
+        trialData.push(headers);
+        next();
+        pid = ACPToolKit.getCurrentParticipantId();
+      })
+    });
+  </script>
+</body>
+
 </html>

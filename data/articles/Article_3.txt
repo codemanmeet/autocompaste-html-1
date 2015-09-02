@@ -1,17 +1,51 @@
-What is ampere? Unit of electrical current. 12 is the number
+안드로이드 프로그래밍 정복 - Android Study #어댑터뷰
+1. Jake Yoon Date : 2014. 08. 08 Samsung Software Membership Seminar
 
-What is amplifier? A circuit that increases the voltage, current, or power of a signal.
+2. 리스트 뷰1. TABLE OF CONTENTS 2. 3. 커스텀 항목 뷰 다음 시간 숙제 소개 Samsung Software Membership Seminar
 
-What is amplitude? Magnitude or size of a signal voltage or current.
+3. 1. 리스트 뷰 – 어댑터 뷰 Samsung Software Membership Seminar 리스트 뷰는 여러 개의 항목을 수직으로 표시하는 위젯 이다. 수직 스크롤을 지원하므로 항목의 개수가 아무리 많아도 다 표시할 수 있다. 리스트 뷰에 표시되는 항목은 임의의 뷰 이므로 어떠한 형태로든 정보를 표현할 수 있다. 예 : 카카오톡의 리스트 뷰
 
-What is analog? Information represented as continuously varying voltage or current rather than in discrete levels as opposed to digital data varying between two discrete levels.
+4. 1. 리스트 뷰 – 어댑터 뷰 Samsung Software Membership Seminar 안드로이드는 리스트뷰 뿐만 아니라 항목의 집합을 표시하는 여러가지 위젯을 제공한다. 리스트뷰, 그리드뷰, 스피너, 갤러리 등을 어댑터뷰라고 부른다. 표시할 데이터를 직접 관리하지 않고 어댑터로부터 공급받기 때문에 어댑터뷰라고 부른다. View ViewGroup AdapterView AbsSpinner Spinner Gallery AbsListView ListView GridView ExpandableListView 어댑터뷰의 계층구조
 
-What is anode? The positive electrode or terminal of a device. The "P" material of a diode.
+5. 1. 리스트 뷰 – 어댑터 뷰 Samsung Software Membership Seminar 어댑터는 원본으로부터 얻은 데이터를 관리 어댑터뷰는 어댑터가 전달한 데이터를 화면에 표시 데이터 원본어댑터뷰 어댑터 항목 개수는? 5개다 3번 항목 뷰 요청 옛다! 원본 참조 어댑터뷰, 어댑터, 데이터원본의 관계
 
-What is antenna, receiving? A device that converts a radiated electromagnetic wave into an electrical wave.
+6. 1. 리스트 뷰 – 어댑터 뷰 Samsung Software Membership Seminar Adapter – 어댑터뷰와 데이터간의 연결을 제공하고 항목의 집합을 관리하는 메서드 선언 ListAdapter – 리스트뷰와 연결에 필요한 메서드를 정의 SpinnerAdapter – 스피너와 연결에 필요한 메서드를 정의 BaseAdapter – 어댑터에 필요한 기본적인 기능을 구현한다. (ex: getCount, getView) ArrayAdapter – 객체 배열이나 리소스에 정의된 배열로부터 데이터를 받아올 때 사용 CursorAdapter – 데이터베이스로부터 데이터를 공급받아올 때 사용 SimpleAdapter – XML 파일의 정적인 데이터를 원본으로 사용 Adapter SpinnerAdapterListAdapter BaseAdapter ArrayAdapter<T> CursorAdapter SimpleAdapter 어댑터의 계층구조
 
-What is apparent power? Power attained in an AC circuit as a product of effective voltage and current which reach their peak at different times.
+7. 1. 리스트 뷰 – 리스트 뷰 Samsung Software Membership Seminar ListViewTest라는 신규 프로젝트를 생성하고 590p에 있는 소스를 타이핑해보자!
 
-What is armature? The rotating or moving component of a magnetic circuit.
+8. 1. 리스트 뷰 – 리스트 뷰 Samsung Software Membership Seminar ArrayAdapter(Context context, int textViewResourceId, List<T> objects) ArrayAdapter(Context context, int textViewResourceId, T[] objects) context – 현재 컨텍스트이며, 액티비티를 넘겨준다. textViewResourceId - 항목을 표시할 레이아웃의 리소스 ID (직접 레이아웃을 정의할 수도 있고 안드로이드가 제공하는 레이아웃을 사용할수도 있다.) objects – 어댑터로 공급될 데이터의 원본 void setAdapter (T adapter)
 
-What is armstrong oscillator? An oscillator that uses an isolation transformer to achieve positive feedback from output to input.
+9. 1. 리스트 뷰 – 리스트 뷰 Samsung Software Membership Seminar ListFromArray라는 클래스와 arrays.xml 파일을 생성하고 592, 593p에 있는 소스를 타이핑해보자!
+
+10. 1. 리스트 뷰 – 리스트 뷰 Samsung Software Membership Seminar static ArrayAdapter<CharSequence> createFromResource (Context context, int textArrayResId, int textViewResId) context – 현재 컨텍스트이며, 액티비티를 넘겨준다. textArrayResId – 문자열 배열의 리소스 ID textViewResId – 항목을 표시할 레이아웃의 리소스 ID
+
+11. 1. 리스트 뷰 – 리스트 뷰 Samsung Software Membership Seminar 어댑터 배열 XML 리소스 데이터베이스 네트워크 갤러리 그리드뷰 스피너 리스트뷰 어댑터의 유연성
+
+12. 1. 리스트 뷰 – 리스트 뷰 Samsung Software Membership Seminar ListAttr이라는 클래스를 생성하고 595, 596p에 있는 소스를 타이핑 해보자.
+
+13. 1. 리스트 뷰 – 리스트 뷰 Samsung Software Membership Seminar choiceMode – 항목을 선택하는 모드 none : 항목을 선택할 수 없다. singleChoice : 하나의 항목만 선택할 수 있다. multipleChoice : 여러 개의 항목을 선택할 수 있다. divider – 항목 사이의 구분선을 지정 dividerHeight – 구분선의 높이를 지정 entries – 리스트뷰에 표시할 배열을 지정 리스트뷰의 속성
+
+14. 1. 리스트 뷰 – 항목 선택 Samsung Software Membership Seminar ListItemSelect라는 클래스를 생성하고 597p에 있는 소스를 타이핑해보자!
+
+15. 1. 리스트 뷰 – 항목 선택 Samsung Software Membership Seminar void onItemClick(AdapterView<?> parent, View view, int position, long id) parent – 리스트뷰 객체 view – 클릭된 항목 뷰 position – 클릭된 항목의 index id – 클릭된 항목의 id void setOnItemClickListener(AdapterView.OnItemClickListener listener)
+
+16. 1. 리스트 뷰 – 항목 편집 Samsung Software Membership Seminar ListAddDel이라는 클래스와 listadddel 레이아웃 을 생성하고 598, 599p에 있는 소스를 타이핑해보자!
+
+17. 1. 리스트 뷰 – 항목 편집 Samsung Software Membership Seminar int getCheckedItemPosition () 선택된 항목의 위치를 리턴. 단, 선택된 항목이 없을 경우 ListView.INVALID_POSITION과 같은 값(-1)을 리턴 void notifyDataSetChanged () 원본이 변경되었음을 어댑터에게 알리는 함수 반드시 이 함수를 호출해야 변경된 데이터의 결과가 어댑터뷰에 표현된다. 602 ~ 604p는 생략
+
+18. 2. 항목 뷰 – 커스텀 항목 뷰 Samsung Software Membership Seminar 좀 더 복잡한 형태로 리스트뷰를 만들어보자. 복잡한 형태로 리스트뷰를 만들고 싶다면 기본 레이아웃을 사용하지 말고 커스텀 뷰를 만들어 사용할 수 있으며 항목 안의 배치를 그야말로 마음대로 만들 수 있다. 기본 리스트뷰와 커스텀 리스트뷰
+
+19. Samsung Software Membership Seminar ListIconText라는 신규 프로젝트를 생성하고 606~609p에 있는 소스를 타이핑해보자! 2. 항목 뷰 – 커스텀 항목 뷰
+
+20. Samsung Software Membership Seminar MyItem 클래스 리스트뷰에 출력할 항목 하나를 표현한다. Icon은 출력할 이미지이며 Name은 그 옆에 표 시할 문자열이다. MyListAdapter 리스트뷰에게 항목의 집합을 제공하는 어댑터 클래스이다. BaseAdapter를 상속받아서 구현하였으며, 데이터원본과 리스트뷰 사이의 중계 역할을 한 다. 2. 항목 뷰 – 커스텀 항목 뷰 데이터 원본어댑터뷰 어댑터 항목 개수는? 5개다 3번 항목 뷰 요청 옛다! 원본 참조
+
+21. Samsung Software Membership Seminar int getCount() 어댑터에 몇 개의 항목이 있는지 리턴하는 함수 View getView (int position, View convertView, ViewGroup parent) 항목 하나를 출력하기 위한 뷰를 생성하여 리턴하는 함수 리스트뷰는 각 항목을 출력할 때마다 어댑터의 getView 메서드를 호출하여 뷰를 요청하 며 리턴된 뷰를 리스트뷰의 해당 위치에 배치한다. position – 생성할 항복의 index convertView – 표현할 항복의 뷰 parent – 리스트뷰 2. 항목 뷰 – 커스텀 항목 뷰 Icon Name 데이터 원본 (MyItem) 항목 레이아웃
+
+22. 숙제 안내 Samsung Software Membership Seminar
+
+23. Q&A Samsung Software Membership Seminar
+
+24. 수고하셨습니다. Samsung Software Membership Seminar
+
+
+Source: http://www.slideshare.net/yjaeseok/20140808-android-study12adapterview?related=3

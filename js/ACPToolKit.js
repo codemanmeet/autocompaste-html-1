@@ -52,7 +52,8 @@ var ACPToolKit = (function () {
 
         var csvString = csvRows.join('\r\n');
         var $a = $('<a></a>', {
-                href: 'data:attachment/csv;charset=utf-8,' + escape(csvString),
+                // href: 'data:attachment/csv;charset=utf-8,' + escape(csvString),
+                href: 'data:attachment/csv;charset=utf-8,' + csvString,
                 target: '_blank',
                 download: fileName + '.csv'
             });
