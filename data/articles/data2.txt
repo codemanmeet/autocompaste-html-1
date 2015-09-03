@@ -1,15 +1,10 @@
-What is AC voltage? A voltage in which the polarity alternates.
+9. 1. 서버 - Node.js - NPM(Node Package Manager)
+10. 2. 데이터베이스 - MongoDB - 크로스플랫폼 도큐먼트 지향 데이터베이스 시스템 - NoSQL - 오픈소스 소프트웨어
+11. 백엔드를 왜…….!!!???
+12. 3. 클라이언트 데이터베이스 WebSQL : - 관계형 데이터베이스 - SQLite 기반 IndexedDB : - NoSQL - HTML5 웹표준 - IE 10 이상.. ㅠㅠ - 모바일이라면? CouchDB, PouchDB : - 이런 것도 있다. Etc.
+13. 4. etc. for Full Stack Development MEAN Stack Development - MongoDB : 데이터베이스 - Express : 서버 프레임워크 - AngularJS : 클라이언트 프레임워크 - Node.js : 서버
+14. 5. 모바일 어플리케이션 하이브리드 앱의 장점: - HTML, CSS, Javascript로 개발 - One source multi use - 나쁘지 않은 성능 - 디바이스 자원 사용(카메라 등) - 개발이 쉽고 빠르다
+15. 5. 모바일 어플리케이션 하이브리드 앱의 장점: - HTML, CSS, Javascript로 개발 - One source multi use - 나쁘지 않은 성능 - 디바이스 자원 사용(카메라 등) - 개발이 쉽고 빠르다
+16. 5. 모바일 어플리케이션 하이브리드 앱의 장점: - HTML, CSS, Javascript로 개발 - One source multi use - 나쁘지 않은 성능 - 디바이스 자원 사용(카메라 등) - 개발이 쉽고 빠르다 개발자의 이상: 1 의 리소스로 2 + @ 결과 iOS, Android 등등 현실: 1.5 의 리소스로 0.7의 결과 모바일 브라우저 파편화 느려터진 성능
 
-What is Admittance? (symbol "Y") Measure of how easily AC will flow through a circuit. Admittance is the reciprocal of impedance and is measured in siemens.
-
-What is alkaline cell? A primary cell that delivers more current than a carbon-zinc cell. Also known as an "alkaline manganese cell".
-
-What is alligator clip? Spring clip on the end of a test lead used to make a temporary connection.
-
-What is alpha? Ratio of collector current to emitter current in a bipolar junction transistor (BJT) Greek letter alpha "a" is the symbol used.
-
-What is alternating current? An electric current that rises to a maximum in one direction, falls back to zero and then rises to a maximum in the opposite direction and then repeats.
-
-What is alternator? Name for an AC generator.
-
-What is ammeter? A meter used to measure current.
+Source: http://www.slideshare.net/yakuball/1-48824487

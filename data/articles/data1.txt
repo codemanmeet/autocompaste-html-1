@@ -1,19 +1,6 @@
-What is absorption? Loss or dissipation of energy as it travels through a medium. Example: radio waves lose some of their energy as they travel through that atmosphere. What about this... Hello there
+Node.js는 JavaScript 언어를 사용해 서버개발을 할 수 있는 도구 내지는 서버입니다. 그냥 자신의 OS에 Node.js를 다운로드 받아서 설치하고 app.js를 만들고 cmd창에서 node app.js하면 서버가 실행됩니다. http://localhost:포트 접속하면 끝이죠. 다른 서버 개발처럼 서버를 따로 설치할 필요가 없습니다. 실로 node.js의 호스트코드는 서버를 직접 생성하고 실행하는 코드가 들어갑니다. 그게 무한한 확장력과 유연성을 더해주는 듯 합니다.
+Node.js는 npm이라는 명령어를 이용해 자신이 원하는 모듈을 다운로드할 수 있습니다. 굉장히 쉽습니다. 단지 npm install 모듈명 만 하면 됩니다. 가령 npm install mysql 하면 mysql모듈을 다운로드 받을 수 있고 코드상에서는 var mysql = require('mysql')만 하면 바로 mysql모듈을 로드해 쓸 수 있게 되죠. 필요한 모듈만 가져와 쓴다는 건 마치 maven 같다는 느낌이였습니다. 버전 관리도 되고요. 그건 packege.json에서 할 수 있죠. 암튼 maven개념이 여기서도 보네요.
+Node.js가 나온지는 꽤 되었는데 관련된 내용이 많다고 보기에는 어려운 것 같습니다. 개발하면서 느낀 점은 생산성이 있거나 특별히 좋다는 느낌은 못받았습니다. 결국 자신이 더욱 생산성 있는 프레임웍을 만들던가 그런게 나오지 않는다면 결코 쉬운 개발은 못합니다. 언어적 접근이 쉽기 때문에 개발이 쉬운거라는 것은 사실 착각이더군요. ^^
+하지만 socket.io가 너무 좋습니다. 이건 정말 물건이었습니다. 웹브라우저 종류와 버전에 상관없이 소켓통신할 수 있는 쉬운 인터페이스를 제공해줍니다. 네임스페이스, 방기능 같은것도 구현할 수 있어 매우 직관적입니다. node.js의 꽃이라고 할 수 있을 것 같습니다.
 
-What is acceptor atoms? Trivalent atoms that accept free electrons from pentavalent atoms.
-
-What is AC coupling? Circuit that passes an AC signal while blocking a DC voltage.
-
-What is AC/DC? Equipment that will operate on either an AC or DC power source.
-
-What is AC generator? Device used to transform mechanical energy into AC electrical power.
-
-What is AC load line? A graph representing all possible combinations of AC output voltage and currentfor an amplifier.
-
-What is AC power supply? Power supply that delivers an AC voltage.
-
-What is active component? A component that changes the amplitude of a signal between input and output.
-
-What is active filter? A filter that uses an amplifier in addition to reactive components to pass or reject selected frequencies.
-
-What is active region? The region of BJT operation between saturation and cut off used for linear amplification.
+Source: https://www.facebook.com/cookilab/posts/510848062305340

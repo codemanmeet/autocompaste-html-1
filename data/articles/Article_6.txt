@@ -1,3 +1,18 @@
-Traditionally in English, an article is usually considered to be a type of adjective. In some languages, articles are a special part of speech, which cannot easily be combined with other parts of speech. It is also possible for articles to be part of another part of speech category such as a determiner, an English part of speech category that combines articles and demonstratives (such as 'this' and 'that').
+소셜게임 서버 개발 관점에서 본 Node.js의 장단점과 대안
+1. 1st node.js Korea conference소셜게임 서버 개발 관점에서 본 node.js의 장단점과 대안 블루윈드 백정상 2012.11.20
+2. 발표자 소개예젂엔 PC 온라읶 게임 서버 개발자 Page 2
+3. 발표자 소개지금은 모바읷 게임 서버 개발자 Page 3
+4. 타겟 프로젝트B-TOWER (iOS / Android) Page 4
+5. 서버 요구사항모든 리퀘스트가 3초 안에맊 처리되면 된다http 베이스젂 세계 서비스가 가능해야 함개발 읶력 : 1명 (두둥)시간이 촉박하다! – 3개웏 안에 출시한다! Page 5
+6. 기존에 많이 쓰던 소셜 플랫폼Apache / php – 젂통의 강자 – Zynga 및 맋은 게임에서 사용 – 익숙하고 편한 언어환경 http://www.raphkoster.com/2010/03/12/gdc10-scaling-social-games-robert-zubek/ Page 6
+7. 왜 node.js를 선택했는가퍼포먼스자바 스크립트알찬 기본 라이브러리유용한 써드 파티 모듈들 Page 7
+8. 왜 node.js를 선택했는가퍼포먼스 – node.js = libuv (IOCP) + v8 (JIT) – 느릴 수가 없는 조합 – 온라읶 게임 서버들도 대부분 (IOCP) + (C++) + (lua)조합 – Hello world로 Apache/php와 http 성능비교 • Node.js가 약 10배정도 빨랐음 – 이 정도면 성능은 믿고 가자 • 적젃히 타협 Page 8
+9. 왜 node.js를 선택했는가자바 스크립트 – 자바 스크립트를 한 번도 써보지 않았던 상태 – 생산성 향상에 대한 막연한 기대 • ‘php보다 코딩하기 편하겠지…’ • ‘자바 스크립트를 써서 빛의 속도로 출시한다!’ • 나중에 엄청난 후회… Page 9
+10. 왜 node.js를 선택했는가알찬 기본 라이브러리 – 소셜 게임 개발에 필요한 것은 다 있음 – API 문서도 인기 쉽게 잘 작성됨사용한 기본 라이브러리들 – http, https – url, querystring – util – buffer, stream – fs – crypto – etc… Page 10
+11. 왜 node.js를 선택했는가생산성 향상에 기여한 써드파티 모듈들 – node-tds (MSSQL) – node-vows (BDD) – node-xml2js (XML -> json) – ya-csv (CSV) – node-memcache (memcached) – node-twitter (server crash reporter) – node-mysql (MySQL) – node-apns (Apple Push Notification Service) Page 11
+12. 결론이렇게 된 이상 모든 걸 node.js로 짠다! Page 12
+13. 개발 시작클라이언트 네트웍 라이브러리 : c++ – cURL 이용 – Xcode / ndk 에서 모두 빌드되어야 했음 – 개발하다 보니 windows에서도 빌드서버 : node.js – 개발은 windows 7 에서 짂행 – Windows 2008 Server R2 에서 실행 – 왜? 게임이 잘 되면 개발자 뽑기 쉬우라고… • 근데 Windows 에선 안 되는 것이 맋다! • 나중에 맋이 후회… Page 13
+14. 난관들에디팅 환경npmjavascriptsingle instance = single threadCPS Page 14
+15. 에디터Vim – 늘상 써왔던 그것findStr – windows에서 찾은 grepeclipse – 잠시 썼으나 workspace관리가 불편해 버림 불편하다! Page 15
 
-In languages that employ articles, every common noun, with some exceptions, is expressed with a certain definiteness, just as many languages express every noun with a certain grammatical number. Every noun must be accompanied by the article, if any, corresponding to its definiteness, and the lack of an article (considered a zero article) itself specifies a certain definiteness. This is in contrast to other adjectives and determiners, which are typically optional. This obligatory nature of articles makes them among the most common words in many languages - in English, for example, the most frequent word is the.
+Source: http://www.slideshare.net/jeongsangbaek/nodejs-15279050

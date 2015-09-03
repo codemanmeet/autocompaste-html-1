@@ -5,21 +5,21 @@
       "granularity": "sentence",
       "korean": 100,
       "data_file": "data/texts.json",
-      "stimuli": ""
+      "stimuli": "복잡한 형태로 리스트뷰를 만들고 싶다면 기본 레이아웃을 사용하지 말고 커스텀 뷰를 만들어 사용할 수 있으며 항목 안의 배치를 그야말로 마음대로 만들 수 있다."
     },
     "APM2": {
       "technique": "AUTOCOMPASTE",
-      "granularity": "paragraph",
+      "granularity": "sentence",
       "korean": 100,
       "data_file": "data/texts.json",
-      "stimuli": ""
+      "stimuli": "구현하고자 하는 횡단 관심사의 기능을 의미한다. "
     },
     "APM3": {
       "technique": "AUTOCOMPASTE",
       "granularity": "sentence",
       "korean": 100,
       "data_file": "data/texts.json",
-      "stimuli": ""
+      "stimuli": "결국 자신이 더욱 생산성 있는 프레임웍을 만들던가 그런게 나오지 않는다면 결코 쉬운 개발은 못합니다. 언어적 접근이 쉽기 때문에 개발이 쉬운거라는 것은 사실 착각이더군요. "
     },
 
     "AQM1": {
@@ -27,21 +27,21 @@
       "granularity": "paragraph",
       "korean": 100,
       "data_file": "data/texts.json",
-      "stimuli": ""
+      "stimuli": "개발하면서 느낀 점은 생산성이 있거나 특별히 좋다는 느낌은 못받았습니다. 결국 자신이 더욱 생산성 있는 프레임웍을 만들던가 그런게 나오지 않는다면 결코 쉬운 개발은 못합니다. 언어적 접근이 쉽기 때문에 개발이 쉬운거라는 것은 사실 착각이더군요. "
     },
     "AQM2": {
       "technique": "AUTOCOMPASTE",
       "granularity": "paragraph",
       "korean": 100,
       "data_file": "data/texts.json",
-      "stimuli": ""
+      "stimuli": "구현하고자 하는 횡단 관심사의 기능을 의미한다. 한개 이상의 포인트컷과 어드바이스의 조합으로 만들어진다. 어드바이스는 조인포인트와 결합하여 동작하는 시점에 따라 5개로 구분된다."
     },
     "AQM3": {
       "technique": "AUTOCOMPASTE",
       "granularity": "paragraph",
       "korean": 100,
       "data_file": "data/texts.json",
-      "stimuli": ""
+      "stimuli": "어드바이스를 적용할 조인 포인트를 선별하는 과정이나 그 기능을 정의한 모듈을 의미한다. 패턴매칭을 이용하여 어떤 조인포인트를 사용할 것인지 결정한다."
     },
 
     "ARM1": {
@@ -49,21 +49,21 @@
       "granularity": "phrase",
       "korean": 100,
       "data_file": "data/texts.json",
-      "stimuli": ""
+      "stimuli": "포인트컷과 어드바이스의"
     },
     "ARM2": {
       "technique": "AUTOCOMPASTE",
       "granularity": "phrase",
       "korean": 100,
       "data_file": "data/texts.json",
-      "stimuli": ""
+      "stimuli": "구현체로 조인 포인트에 삽입되어"
     },
     "ARM3": {
       "technique": "AUTOCOMPASTE",
       "granularity": "phrase",
       "korean": 100,
       "data_file": "data/texts.json",
-      "stimuli": ""
+      "stimuli": "어노테이션만 검색하고"
     },
 
     "BPM1": {
@@ -71,14 +71,14 @@
       "granularity": "sentence",
       "korean": 100,
       "data_file": "data/texts.json",
-      "stimuli": ""
+      "stimuli": "복잡한 형태로 리스트뷰를 만들고 싶다면 기본 레이아웃을 사용하지 말고 커스텀 뷰를 만들어 사용할 수 있으며 항목 안의 배치를 그야말로 마음대로 만들 수 있다."
     },
     "BPM2": {
       "technique": "TRADITIONAL",
       "granularity": "sentence",
       "korean": 100,
       "data_file": "data/texts.json",
-      "stimuli": ""
+      "stimuli": "구현하고자 하는 횡단 관심사의 기능을 의미한다. "
 
     },
     "BPM3": {
@@ -86,7 +86,7 @@
       "granularity": "sentence",
       "korean": 100,
       "data_file": "data/texts.json",
-      "stimuli": ""
+      "stimuli": "결국 자신이 더욱 생산성 있는 프레임웍을 만들던가 그런게 나오지 않는다면 결코 쉬운 개발은 못합니다. 언어적 접근이 쉽기 때문에 개발이 쉬운거라는 것은 사실 착각이더군요. "
 
     },
 
@@ -95,7 +95,7 @@
       "granularity": "paragraph",
       "korean": 100,
       "data_file": "data/texts.json",
-      "stimuli": ""
+      "stimuli": "개발하면서 느낀 점은 생산성이 있거나 특별히 좋다는 느낌은 못받았습니다. 결국 자신이 더욱 생산성 있는 프레임웍을 만들던가 그런게 나오지 않는다면 결코 쉬운 개발은 못합니다. 언어적 접근이 쉽기 때문에 개발이 쉬운거라는 것은 사실 착각이더군요. "
 
     },
     "BQM2": {
@@ -103,7 +103,7 @@
       "granularity": "paragraph",
       "korean": 100,
       "data_file": "data/texts.json",
-      "stimuli": ""
+      "stimuli": "구현하고자 하는 횡단 관심사의 기능을 의미한다. 한개 이상의 포인트컷과 어드바이스의 조합으로 만들어진다. 어드바이스는 조인포인트와 결합하여 동작하는 시점에 따라 5개로 구분된다."
 
     },
     "BQM3": {
@@ -111,7 +111,7 @@
       "granularity": "paragraph",
       "korean": 100,
       "data_file": "data/texts.json",
-      "stimuli": ""
+      "stimuli": "어드바이스를 적용할 조인 포인트를 선별하는 과정이나 그 기능을 정의한 모듈을 의미한다. 패턴매칭을 이용하여 어떤 조인포인트를 사용할 것인지 결정한다."
     },
 
     "BRM1": {
@@ -119,7 +119,7 @@
       "granularity": "phrase",
       "korean": 100,
       "data_file": "data/texts.json",
-      "stimuli": ""
+      "stimuli": "포인트컷과 어드바이스의"
 
     },
     "BRM2": {
@@ -127,7 +127,7 @@
       "granularity": "phrase",
       "korean": 100,
       "data_file": "data/texts.json",
-      "stimuli": ""
+      "stimuli": "구현체로 조인 포인트에 삽입되어"
 
     },
     "ARM3": {
@@ -135,7 +135,7 @@
       "granularity": "phrase",
       "korean": 100,
       "data_file": "data/texts.json",
-      "stimuli": ""
+      "stimuli": "어노테이션만 검색하고"
 
     },
 
@@ -146,21 +146,21 @@
       "granularity": "sentence",
       "korean": 50,
       "data_file": "data/texts.json",
-      "stimuli": "리스트 뷰 – 어댑터 뷰 samsung software membership seminar 리스트 뷰는 여러 개의 항목을 수직으로 표시하는 위젯 이다."
+      "stimuli": "Samsung Software Membership Seminar MyItem 클래스 리스트뷰에 출력할 항목 하나를 표현한다."
     },
     "APN2": {
       "technique": "AUTOCOMPASTE",
-      "granularity": "paragraph",
+      "granularity": "sentence",
       "korean": 50,
       "data_file": "data/texts.json",
-      "stimuli": "그럼 AOP에 대해서 이야기하기에 앞서 OOP가 무엇인지 간단히 살펴보자.\nOOP라는 개념은 기존 C언어 등에서 사용되던 구조적 프로그래밍의 개념과 완전히 달랐다.\n구조적 프로그래밍에서 OOP로 넘어가면서 개발자들은 큰 혼란을 겪기도 했다고 한다.\n그렇미나 객체의 개념이나 재사용등과 같은 어려가지 개념들은 기존의 구조적 프로그래밍을 하던 사람들에게 쉽게 받아들여지지 않기도 했다고 한다.\n그렇지만 OOP의 뛰어난 효율성으로 자바는 지금과 같이 널리 사용되게 되었다. (물론 효율성 하나만 가지고 널리 사용되게 된건 아니다.)"
+      "stimuli": "21. Samsung Software Membership Seminar int getCount() 어댑터에 몇 개의 항목이 있는지 리턴하는 함수 View getView (int position, View convertView, ViewGroup parent) 항목 하나를 출력하기 위한 뷰를 생성하여 리턴하는 함수 리스트뷰는 각 항목을 출력할 때마다 어댑터의 getView 메서드를 호출하여 뷰를 요청하 며 리턴된 뷰를 리스트뷰의 해당 위치에 배치한다."
     },
     "APN3": {
       "technique": "AUTOCOMPASTE",
       "granularity": "sentence",
       "korean": 50,
       "data_file": "data/texts.json",
-      "stimuli": ""
+      "stimuli": "각각 Inversion of Controller(제어 역전), Dependency Injection(의존관계 주입), Aspect Orient Programming(관점 지향 프로그래밍)의 약자이다."
     },
 
     "AQN1": {
@@ -168,21 +168,21 @@
       "granularity": "paragraph",
       "korean": 50,
       "data_file": "data/texts.json",
-      "stimuli": ""
+      "stimuli": "그렇지만 OOP의 뛰어난 효율성으로 자바는 지금과 같이 널리 사용되게 되었다. (물론 효율성 하나만 가지고 널리 사용되게 된건 아니다.)"
     },
     "AQN2": {
       "technique": "AUTOCOMPASTE",
       "granularity": "paragraph",
       "korean": 50,
       "data_file": "data/texts.json",
-      "stimuli": ""
+      "stimuli": "Node.js는 npm이라는 명령어를 이용해 자신이 원하는 모듈을 다운로드할 수 있습니다. 굉장히 쉽습니다. 단지 npm install 모듈명 만 하면 됩니다. 가령 npm install mysql 하면 mysql모듈을 다운로드 받을 수 있고 코드상에서는 var mysql = require('mysql')만 하면 바로 mysql모듈을 로드해 쓸 수 있게 되죠. 필요한 모듈만 가져와 쓴다는 건 마치 maven 같다는 느낌이였습니다. 버전 관리도 되고요. 그건 packege.json에서 할 수 있죠. 암튼 maven개념이 여기서도 보네요."
     },
     "AQN3": {
       "technique": "AUTOCOMPASTE",
       "granularity": "paragraph",
       "korean": 50,
       "data_file": "data/texts.json",
-      "stimuli": ""
+      "stimuli": "19. Samsung Software Membership Seminar ListIconText라는 신규 프로젝트를 생성하고 606~609p에 있는 소스를 타이핑해보자! 2. 항목 뷰 – 커스텀 항목 뷰"
     },
 
     "ARN1": {
@@ -190,21 +190,21 @@
       "granularity": "phrase",
       "korean": 50,
       "data_file": "data/texts.json",
-      "stimuli": ""
+      "stimuli": "프로젝트B-TOWER"
     },
     "ARN2": {
       "technique": "AUTOCOMPASTE",
       "granularity": "phrase",
       "korean": 50,
       "data_file": "data/texts.json",
-      "stimuli": ""
+      "stimuli": "AIDL 툴로 Java 파일"
     },
     "ARN3": {
       "technique": "AUTOCOMPASTE",
       "granularity": "phrase",
       "korean": 50,
       "data_file": "data/texts.json",
-      "stimuli": ""
+      "stimuli": "Google이 꿈꾸는..Android의 미래"
     },
 
     "BPN1": {
@@ -212,14 +212,14 @@
       "granularity": "sentence",
       "korean": 50,
       "data_file": "data/texts.json",
-      "stimuli": ""
+      "stimuli": "Samsung Software Membership Seminar MyItem 클래스 리스트뷰에 출력할 항목 하나를 표현한다."
     },
     "BPN2": {
       "technique": "TRADITIONAL",
       "granularity": "sentence",
       "korean": 50,
       "data_file": "data/texts.json",
-      "stimuli": ""
+      "stimuli": "21. Samsung Software Membership Seminar int getCount() 어댑터에 몇 개의 항목이 있는지 리턴하는 함수 View getView (int position, View convertView, ViewGroup parent) 항목 하나를 출력하기 위한 뷰를 생성하여 리턴하는 함수 리스트뷰는 각 항목을 출력할 때마다 어댑터의 getView 메서드를 호출하여 뷰를 요청하 며 리턴된 뷰를 리스트뷰의 해당 위치에 배치한다."
 
     },
     "BPN3": {
@@ -227,7 +227,7 @@
       "granularity": "sentence",
       "korean": 50,
       "data_file": "data/texts.json",
-      "stimuli": ""
+      "stimuli": "각각 Inversion of Controller(제어 역전), Dependency Injection(의존관계 주입), Aspect Orient Programming(관점 지향 프로그래밍)의 약자이다."
 
     },
 
@@ -236,7 +236,7 @@
       "granularity": "paragraph",
       "korean": 50,
       "data_file": "data/texts.json",
-      "stimuli": ""
+      "stimuli": "15. 1. 리스트 뷰 – 항목 선택 Samsung Software Membership Seminar void onItemClick(AdapterView<?> parent, View view, int position, long id) parent – 리스트뷰 객체 view – 클릭된 항목 뷰 position – 클릭된 항목의 index id – 클릭된 항목의 id void setOnItemClickListener(AdapterView.OnItemClickListener listener)"
 
     },
     "BQN2": {
@@ -244,7 +244,7 @@
       "granularity": "paragraph",
       "korean": 50,
       "data_file": "data/texts.json",
-      "stimuli": ""
+      "stimuli": "Node.js는 npm이라는 명령어를 이용해 자신이 원하는 모듈을 다운로드할 수 있습니다. 굉장히 쉽습니다. 단지 npm install 모듈명 만 하면 됩니다. 가령 npm install mysql 하면 mysql모듈을 다운로드 받을 수 있고 코드상에서는 var mysql = require('mysql')만 하면 바로 mysql모듈을 로드해 쓸 수 있게 되죠. 필요한 모듈만 가져와 쓴다는 건 마치 maven 같다는 느낌이였습니다. 버전 관리도 되고요. 그건 packege.json에서 할 수 있죠. 암튼 maven개념이 여기서도 보네요."
 
     },
     "BQN3": {
@@ -252,7 +252,7 @@
       "granularity": "paragraph",
       "korean": 50,
       "data_file": "data/texts.json",
-      "stimuli": ""
+      "stimuli": "19. Samsung Software Membership Seminar ListIconText라는 신규 프로젝트를 생성하고 606~609p에 있는 소스를 타이핑해보자! 2. 항목 뷰 – 커스텀 항목 뷰"
     },
 
     "BRN1": {
@@ -260,7 +260,7 @@
       "granularity": "phrase",
       "korean": 50,
       "data_file": "data/texts.json",
-      "stimuli": ""
+      "stimuli": "프로젝트B-TOWER"
 
     },
     "BRN2": {
@@ -268,7 +268,7 @@
       "granularity": "phrase",
       "korean": 50,
       "data_file": "data/texts.json",
-      "stimuli": ""
+      "stimuli": "AIDL 툴로 Java 파일"
 
     },
     "BRN3": {
@@ -276,7 +276,7 @@
       "granularity": "phrase",
       "korean": 50,
       "data_file": "data/texts.json",
-      "stimuli": ""
+      "stimuli": "Google이 꿈꾸는..Android의 미래"
 
     },
 
@@ -287,21 +287,21 @@
       "granularity": "sentence",
       "korean": 20,
       "data_file": "data/texts.json",
-      "stimuli": "리스트 뷰 – 어댑터 뷰 samsung software membership seminar 리스트 뷰는 여러 개의 항목을 수직으로 표시하는 위젯 이다."
+      "stimuli": "12. 3. 클라이언트 데이터베이스 WebSQL : - 관계형 데이터베이스 - SQLite 기반 IndexedDB : - NoSQL - HTML5 웹표준 - IE 10 이상.."
     },
     "APO2": {
       "technique": "AUTOCOMPASTE",
-      "granularity": "paragraph",
+      "granularity": "sentence",
       "korean": 20,
       "data_file": "data/texts.json",
-      "stimuli": "그럼 AOP에 대해서 이야기하기에 앞서 OOP가 무엇인지 간단히 살펴보자.\nOOP라는 개념은 기존 C언어 등에서 사용되던 구조적 프로그래밍의 개념과 완전히 달랐다.\n구조적 프로그래밍에서 OOP로 넘어가면서 개발자들은 큰 혼란을 겪기도 했다고 한다.\n그렇미나 객체의 개념이나 재사용등과 같은 어려가지 개념들은 기존의 구조적 프로그래밍을 하던 사람들에게 쉽게 받아들여지지 않기도 했다고 한다.\n그렇지만 OOP의 뛰어난 효율성으로 자바는 지금과 같이 널리 사용되게 되었다. (물론 효율성 하나만 가지고 널리 사용되게 된건 아니다.)"
+      "stimuli": "14. 난관들에디팅 환경npmjavascriptsingle instance = single threadCPS Page 14"
     },
     "APO3": {
       "technique": "AUTOCOMPASTE",
       "granularity": "sentence",
       "korean": 20,
       "data_file": "data/texts.json",
-      "stimuli": ""
+      "stimuli": "22. 숙제 안내 Samsung Software Membership Seminar"
     },
 
     "AQO1": {
@@ -309,21 +309,21 @@
       "granularity": "paragraph",
       "korean": 20,
       "data_file": "data/texts.json",
-      "stimuli": ""
+      "stimuli": "20. Agenda• 안드로이드 이해 – Binder (Broker 패턴) 그리고 Intent• 오픈 소스 그리고 사례 – Simple Framework (Restful) – microlog4android – 불편하지 않은 화면 갱신 (Publisher-Subscriber) – android-actionbar (+ actionbar sherlock) – Android Binding Framework – fHalo (facebook client famework)• 분석 방법 – Localytics 사용법 – STAN을 이용한 Android App 분석 방법"
     },
     "AQO2": {
       "technique": "AUTOCOMPASTE",
       "granularity": "paragraph",
       "korean": 20,
       "data_file": "data/texts.json",
-      "stimuli": ""
+      "stimuli": "27. Binder Architecture IDL Compiler in args operation() Client Object OBJ REF out args, return IDL SKEL IDL Binder STUBS INTERFACE Object AdapterBinder"
     },
     "AQO3": {
       "technique": "AUTOCOMPASTE",
       "granularity": "paragraph",
       "korean": 20,
       "data_file": "data/texts.json",
-      "stimuli": ""
+      "stimuli": "14. 난관들에디팅 환경npmjavascriptsingle instance = single threadCPS Page 14"
     },
 
     "ARO1": {
@@ -331,21 +331,21 @@
       "granularity": "phrase",
       "korean": 20,
       "data_file": "data/texts.json",
-      "stimuli": ""
+      "stimuli": "왜 node.js를"
     },
     "ARO2": {
       "technique": "AUTOCOMPASTE",
       "granularity": "phrase",
       "korean": 20,
       "data_file": "data/texts.json",
-      "stimuli": ""
+      "stimuli": "Google은 왜 MODU의"
     },
     "ARO3": {
       "technique": "AUTOCOMPASTE",
       "granularity": "phrase",
       "korean": 20,
       "data_file": "data/texts.json",
-      "stimuli": ""
+      "stimuli": "MEAN Stack Development - MongoDB : 데이터베이스"
     },
 
     "BPO1": {
@@ -353,14 +353,14 @@
       "granularity": "sentence",
       "korean": 20,
       "data_file": "data/texts.json",
-      "stimuli": ""
+      "stimuli": "12. 3. 클라이언트 데이터베이스 WebSQL : - 관계형 데이터베이스 - SQLite 기반 IndexedDB : - NoSQL - HTML5 웹표준 - IE 10 이상.."
     },
     "BPO2": {
       "technique": "TRADITIONAL",
       "granularity": "sentence",
       "korean": 20,
       "data_file": "data/texts.json",
-      "stimuli": ""
+      "stimuli": "14. 난관들에디팅 환경npmjavascriptsingle instance = single threadCPS Page 14"
 
     },
     "BPO3": {
@@ -368,7 +368,7 @@
       "granularity": "sentence",
       "korean": 20,
       "data_file": "data/texts.json",
-      "stimuli": ""
+      "stimuli": "22. 숙제 안내 Samsung Software Membership Seminar"
 
     },
 
@@ -377,7 +377,7 @@
       "granularity": "paragraph",
       "korean": 20,
       "data_file": "data/texts.json",
-      "stimuli": ""
+      "stimuli": "20. Agenda• 안드로이드 이해 – Binder (Broker 패턴) 그리고 Intent• 오픈 소스 그리고 사례 – Simple Framework (Restful) – microlog4android – 불편하지 않은 화면 갱신 (Publisher-Subscriber) – android-actionbar (+ actionbar sherlock) – Android Binding Framework – fHalo (facebook client famework)• 분석 방법 – Localytics 사용법 – STAN을 이용한 Android App 분석 방법"
 
     },
     "BQO2": {
@@ -385,7 +385,7 @@
       "granularity": "paragraph",
       "korean": 20,
       "data_file": "data/texts.json",
-      "stimuli": ""
+      "stimuli": "27. Binder Architecture IDL Compiler in args operation() Client Object OBJ REF out args, return IDL SKEL IDL Binder STUBS INTERFACE Object AdapterBinder"
 
     },
     "BQO3": {
@@ -393,7 +393,7 @@
       "granularity": "paragraph",
       "korean": 20,
       "data_file": "data/texts.json",
-      "stimuli": ""
+      "stimuli": "14. 난관들에디팅 환경npmjavascriptsingle instance = single threadCPS Page 14"
     },
 
     "BRO1": {
@@ -401,7 +401,7 @@
       "granularity": "phrase",
       "korean": 20,
       "data_file": "data/texts.json",
-      "stimuli": ""
+      "stimuli": "왜 node.js를"
 
     },
     "BRO2": {
@@ -409,7 +409,7 @@
       "granularity": "phrase",
       "korean": 20,
       "data_file": "data/texts.json",
-      "stimuli": ""
+      "stimuli": "Google은 왜 MODU의"
 
     },
     "ARO3": {
@@ -417,7 +417,7 @@
       "granularity": "phrase",
       "korean": 20,
       "data_file": "data/texts.json",
-      "stimuli": ""
+      "stimuli": "MEAN Stack Development - MongoDB : 데이터베이스"
 
     }
   }
