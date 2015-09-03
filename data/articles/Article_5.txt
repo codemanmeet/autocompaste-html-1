@@ -53,3 +53,5 @@ Around advice : 조인포인트의 전 과정(전, 후)에 수행되는 advice
 
 5) 타겟(Target)
 어드바이스를 받을 대상, 즉 객체를 의미한다. 비지니스로직을 수행하는 클래스일수도 있지만, 프록시 객체(Object)가 될 수도 있다.
+
+Source: http://addio3305.tistory.com/86
