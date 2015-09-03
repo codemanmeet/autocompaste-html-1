@@ -19,7 +19,8 @@
   <div class="blackout flex">
     <div>
       <div class="text-white text-large">
-        Take a break. Take a KitKat.
+        Take a break.  Take a Kit-Kat. <br>
+        쉴하시기 바랍니다.
       </div>
       <div class="text-white">
         Resuming in
@@ -136,6 +137,11 @@
       }
 
       if (currentTrial < totalNumberOfTrials) {
+        if (currentTrial == 10) {
+          // take a break
+          var NUM_BREAKTIME_SECS = 120;
+          pauseScreen.start(NUM_BREAKTIME_SECS * 1000);
+        }
         ACPToolKit.presentTrial(trialsData[currentTrial]);
         currentTrial += 1;
         $('.js-expt-current-trial').text(currentTrial);
@@ -352,7 +358,12 @@
               "AQN1 AQN2 AQN3 " +
               "AQO1 AQO2 AQO3 "
         };
-        return userMap[userId];
+        var seq = userMap[userId];
+        if (!seq) {
+          window.alert('Incorrect user ID.  Please set a valid user ID before continuing.');
+          window.location = '/';
+        }
+        return seq;
       };
 
       /**
@@ -439,7 +450,7 @@
 
     $(document).ready(function() {
       $.get('data/experiments.json', function(data) {
-        var seq = translator.userToSeq("P06"); // trial sequence in words
+        var seq = translator.userToSeq(ACPToolKit.getCurrentParticipantId()); // trial sequence in words
         trialsData = translator.convSeqToArr(data.experiments, seq); // raw data
         console.log(trialsData);
         currentTrial = 0;
