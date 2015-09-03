@@ -1,116 +1,171 @@
 <!doctype html>
 <html class="no-js" lang="">
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="x-ua-compatible" content="ie=edge">
-        <title>CS4249 Assignment 1</title>
-        <meta name="description" content="">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="css/normalize.css">
-        <link rel="stylesheet" href="css/bootstrap.min.css">
-        <link rel="stylesheet" href="css/main.css">
-        <link rel="stylesheet" href="css/style.css">
-        <script src="js/vendor/modernizr-2.8.3.min.js"></script>
-    </head>
-    <body>
-        <!--[if lt IE 8]>
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <title>CS4249 Assignment 1</title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="css/style.css">
+  <script src="js/vendor/modernizr-2.8.3.min.js"></script>
+</head>
+
+<body>
+  <!--[if lt IE 8]>
             <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
         <![endif]-->
-        <nav class="navbar navbar-default">
-            <div class="container">
-                <div class="collapse navbar-collapse">
-                    <ul class="nav navbar-nav">
-                        <li><a href="index.html">Welcome</a></li>
-                        <li><a href="questionnaire-pre.html">Pre Questionnaire</a></li>
-                        <li><a href="instructions.html">Instructions</a></li>
-                        <li><a href="experiment.html">Experiment</a></li>
-                        <li class="active"><a href="questionnaire-post.html">Post Questionnaire</a></li>
-                    </ul>
-                </div>
+  <nav class="navbar navbar-default">
+    <div class="container">
+      <div class="collapse navbar-collapse">
+        <ul class="nav navbar-nav">
+          <li><a href="index.html">Welcome</a></li>
+          <li><a href="questionnaire-pre.html">Pre Questionnaire</a></li>
+          <li><a href="instructions.html">Instructions</a></li>
+          <li><a href="experiment.html">Experiment</a></li>
+          <li class="active"><a href="questionnaire-post.html">Post Questionnaire</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <div class="container">
+    <div class="row">
+      <div class="col-md-8 col-md-offset-2">
+        <h1>Post-Experiment Questionnaire</h1>
+        <hr>
+        <p>
+          Thank you for participating!  Please rate your experience and click <b>Submit</b>.
+        </p>
+        <p>
+          고맙습니다! 경험을 평가 해주십시오. 후 <b>Submit 버튼을</b> 클릭합니다.
+        </p>
+
+        <p>Current participant:
+          <span class="js-pid pid"></span>
+        </p>
+
+        <form id="post-expt-form">
+
+          <div class="form-group">
+            <label for="q1">Question 1 - On a scale of 1 to 4, with 4 being extremely satisfied and 1 being extremely not satisfied, rate your satisfaction in copying articles using the <b>traditional copy and paste</b> technique.</label>
+            <label for="q4">기존의 복사 및 붙여 넣기 기술의 만족도를 평가 해주십시오.</label>
+            <div class="radio">
+              <label>
+                <input type="radio" name="q1" value="4"> 4 Extremely satisfied 우수한!
+              </label>
             </div>
-        </nav>
 
-        <div class="container">
-            <div class="row">
-                <div class="col-md-8 col-md-offset-2">
-                    <h1>Post-Experiment Questionnaire</h1>
-                    <hr>
-                    <p>This part of the interface collects whatever post-experiment information. After the experiment, you want to collect more qualitative and quantitative feedback about the tested techniques. Some of the typical questions include, personal preferences, any difficulties participants experienced in the experiment, and areas of improvement. Please design a basic post-experimental questionnaire (no more than 10 questions).</p>
-
-                    <p>Current participant: <span class="js-pid pid"></span></p>
-
-                    <form id="post-expt-form">
-                        <div class="form-group">
-                            <label for="q1">Question 1 - Text</label>
-                            <input type="text" class="form-control" id="q1" name="q1" placeholder="Enter answer">
-                        </div>
-                        <div class="form-group">
-                            <label for="q2">Question 2 - Radio</label>
-                            <div class="radio">
-                              <label>
-                                <input type="radio" name="q2" id="optionsRadios1" value="radio1">
-                                Radio response 1
-                              </label>
-                            </div>
-                            <div class="radio">
-                              <label>
-                                <input type="radio" name="q2" id="optionsRadios2" value="radio2">
-                                Radio response 2
-                              </label>
-                            </div>
-                        </div>
-                        <div class="form-group">
-                            <label for="q3">Question 3 - Checkbox</label>
-                            <div class="checkbox">
-                              <label>
-                                <input type="checkbox" name="q3" value="checkbox1">
-                                Checkbox response 1
-                              </label>
-                            </div>
-                            <div class="checkbox">
-                              <label>
-                                <input type="checkbox" name="q3" value="checkbox2">
-                                Checkbox response 2
-                              </label>
-                            </div>
-                        </div>
-                        <div class="form-group">
-                            <label for="q4">Question 4 - Select Options</label>
-                            <select class="form-control" name="q4">
-                                <option value="option1">Option response 1</option>
-                                <option value="option2">Option response 2</option>
-                                <option value="option3">Option response 3</option>
-                                <option value="option4">Option response 4</option>
-                                <option value="option1">Option response 5</option>
-                            </select>
-                        </div>
-                        <div class="form-group">
-                            <label for="q5">Question 5 - Textarea</label>
-                            <textarea class="form-control" id="q5" name="q5" placeholder="Enter response"></textarea>
-                        </div>
-                        <button type="submit" class="btn btn-primary btn-lg">Submit</button>
-                    </form>
-                </div>
+            <div class="radio">
+              <label>
+                <input type="radio" name="q1" value="3"> 3
+              </label>
             </div>
-        </div>
 
-        <script src="js/vendor/jquery-1.11.2.min.js"></script>
-        <script src="js/plugins.js"></script>
-        <script src="js/DataStorage.js"></script>
-        <script src="js/ACPToolKit.js"></script>
-        <script src="js/main.js"></script>
+            <div class="radio">
+              <label>
+                <input type="radio" name="q1" value="2"> 2
+              </label>
+            </div>
 
-        <script>
-            $(function () {
-                $('#post-expt-form').submit(function (event) {
-                    event.preventDefault();
-                    var formResponses = $(this).serializeArray();
-                    // Do your own form validation here.
-                    ACPToolKit.downloadFormData(formResponses, 'post');
-                    ACPToolKit.clearAllData();
-                    alert('Thank you for your participation!');
-                });
-            });
-        </script>
-    </body>
+            <div class="radio">
+              <label>
+                <input type="radio" name="q1" value="1"> 1 Extremely dissatisfied 만족하지
+              </label>
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label for="q2">Question 2 - On a scale of 1 to 4, with 4 being extremely satisfied and 1 being extremely not satisfied, rate your satisfaction in copying articles using the <b>AutoComPaste</b> technique.</label>
+            <label for="q2">AutoComPaste 기술의 만족도를 평가 해주십시오.</label>
+            <div class="radio">
+              <label>
+                <input type="radio" name="q2" value="4"> 4 Extremely satisfied 우수한!
+              </label>
+            </div>
+
+            <div class="radio">
+              <label>
+                <input type="radio" name="q2" value="3"> 3
+              </label>
+            </div>
+
+            <div class="radio">
+              <label>
+                <input type="radio" name="q2" value="2"> 2
+              </label>
+            </div>
+
+            <div class="radio">
+              <label>
+                <input type="radio" name="q2" value="1"> 1 Extremely dissatisfied 만족하지
+              </label>
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label for="q3">Question 3 - Please state the issues you have with traditional copy and paste.</label>
+              <label for="q3">기존의 복사 및 붙여 넣기 기술의 문제를 적어주세요.</label>
+            <div class="checkbox">
+              <label>
+                <input type="checkbox" name="q3" value="1">Too troublesome to click and drag mouse
+              </label>
+            </div>
+            <div class="checkbox">
+              <label>
+                <input type="checkbox" name="q3" value="2"> Too faulty, computer does not detect pressing of Ctrl + C / Ctrl + V
+              </label>
+            </div>
+
+            <div class="checkbox">
+              <label>
+                <input type="checkbox" name="q3" value="3">Too slow, does not copy what I am looking at immediately.
+              </label>
+            </div>
+
+            <div class="checkbox">
+              <label>
+                <input type="checkbox" name="q3" value="4">Too troublesome, needs navigation and clicking on multiple windows.</label>
+            </div>
+
+            <div class="checkbox">
+              <label>
+                <input type="checkbox" name="q3" value="5">Other reasons</label>
+            </div>
+
+          <div class="form-group">
+            <label for="q4">Question 4 - What did you like about AutoComPaste?</label>
+            <br>
+            <label for="q4">무슨 일이 AutoComPaste의 techinque에 대한 좋은했다?</label>
+            <textarea class="form-control" id="q4" name="q4" placeholder="Enter response"></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary btn-lg">Submit</button>
+        </form>
+      </div>
+    </div>
+  </div>
+
+  <script src="js/vendor/jquery-1.11.2.min.js"></script>
+  <script src="js/plugins.js"></script>
+  <script src="js/DataStorage.js"></script>
+  <script src="js/ACPToolKit.js"></script>
+  <script src="js/main.js"></script>
+
+  <script>
+    $(function() {
+      $('#post-expt-form').submit(function(event) {
+        event.preventDefault();
+        var formResponses = $(this).serializeArray();
+        // Do your own form validation here.
+        ACPToolKit.downloadFormData(formResponses, 'post');
+        ACPToolKit.clearAllData();
+        alert('Thank you for participating!  경험이 기록되었습니다. 참여 주셔서 감사합니다.');
+      });
+    });
+  </script>
+</body>
+
 </html>

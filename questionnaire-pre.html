@@ -37,8 +37,6 @@
       <div class="col-md-8 col-md-offset-2">
         <h1>Pre-Experiment Questionnaire</h1>
         <hr>
-        <p>This part of the interface collects whatever pre-experiment information. Please come up with a basic questionnaire to help you to gather participant information. The purpose of this questionnaire is to report the participant data and convince
-          readers that you have picked an appropriate target user group and the result has certain generalizability.</p>
 
         <p>Please put all information needed for participant:
           <span class="js-pid pid"></span>
@@ -46,17 +44,17 @@
 
         <form id="pre-expt-form">
           <div class="form-group">
-            <label for="q1">Question 1 - Name</label>
+            <label for="q1">Question 1 - Name 이름</label>
             <input type="text" class="form-control" id="q1" name="q1" placeholder="Please enter your name">
           </div>
 
           <div class="form-group">
-            <label for="q2">Question 2 - Age</label>
+            <label for="q2">Question 2 - Age 나이</label>
             <input type="text" class="form-control" id="q2" name="q2" placeholder="Please enter your age">
           </div>
 
           <div class="form-group">
-            <label for="q3">Question 3 - Gender</label>
+            <label for="q3">Question 3 - Gender 성별</label>
             <div class="radio">
               <label>
                 <input type="radio" name="q3" id="male" value="M"> Male
@@ -71,9 +69,10 @@
 
           <div class="form-group">
             <label for="q4">Question 4 - On a scale of 1 to 4, with 4 being extremely satisfied and 1 being extremely not satisfied, rate your satisfaction in copying articles using the traditional copy and paste technique.</label>
+            <label for="q4">기존의 복사 - 붙여 넣기 기술의 만족도를 평가 해주십시오.</label>
             <div class="radio">
               <label>
-                <input type="radio" name="q4" value="4"> 4 Extremely satisfied
+                <input type="radio" name="q4" value="4"> 4 Extremely satisfied 우수한!
               </label>
             </div>
 
@@ -91,13 +90,14 @@
 
             <div class="radio">
               <label>
-                <input type="radio" name="q4" value="1"> 1 Extremely dissatisfied
+                <input type="radio" name="q4" value="1"> 1 Extremely dissatisfied 만족하지
               </label>
             </div>
           </div>
 
           <div class="form-group">
-            <label for="q3">Question 5 - Please state the issues you have with copy and paste.</label>
+            <label for="q5">Question 5 - Please state the issues you have with copy and paste.</label>
+            <label for="q5">기존의 복사 - 붙여 넣기 문제를 명시하시기 바랍니다.</label>
             <div class="checkbox">
               <label>
                 <input type="checkbox" name="q5" value="1">Too troublesome to click and drag mouse
@@ -128,6 +128,7 @@
             <div class="form-group">
               <label for="q3">Please agree with the terms of consent, before continuing. Please note that all information will be strictly kept confidential by the investigators. Names identifying individuals will be kept separate from data, and will not be submitted
                 for publication. No compensation will be given for participation in this study.</label>
+              <label for="q3">동의의 조건에 동의하시기 바랍니다.</label>
               <div class="radio">
                 <label>
                   <input type="radio" name="consent" value="1">I agree

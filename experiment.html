@@ -66,8 +66,10 @@
               </td>
             </tr>
             <tr>
-              <td>Independent Variable 3</td>
-              <td>???</td>
+              <td>% Korean</td>
+              <td>
+                <span class="js-expt-korean">0</span>
+              </td>
             </tr>
             <tr>
               <td>Trial</td>
@@ -83,8 +85,10 @@
           <span class="js-expt-technique">AUTOCOMPASTE</span> technique from one of the open windows.</p>
           <p>브라우저 창에서 <span class="js-expt-technique"></span>를 사용하여 다음과 같은 <span class="js-expt-granularity"></span>를 복사 - 붙여 넣기하십시오.</p>
         <div id="stimuli" class="alert alert-danger js-expt-stimuli">This is a long stimuli!</div>
-        <button class="btn btn-primary btn-lg" onclick="next()">Next Task</button>
-        <button class="btn btn-primary btn-lg" onclick="next(1)">Skip question</button>
+        <button class="btn btn-success btn-lg" onclick="next()">Next Task 다음</button>
+        <br>
+        <br>
+        <button class="btn btn-lg btn-danger" onclick="next(1)">Skip question 이동</button>
       </div>
       <div id="autocompaste" class="col-sm-9">
         <div id="autocompaste-display"></div>
@@ -107,7 +111,7 @@
     var trialsData;
     var currentTrial;
     var totalNumberOfTrials;
-    var headers = ['Participant id', 'Technique', 'Granularity',
+    var headers = ['Participant id', 'Technique', 'Granularity', '% Korean',
       'Trial no', 'Stimuli', 'User Response', 'Trial Start Time',
       'Trial End Time', 'Trial Time', 'Accuracy', 'Skipped'
     ];
@@ -118,6 +122,7 @@
       if (currentTrial !== 0) {
         var trialResult = ACPToolKit.getCurrentTrialState();
 
+        var korean = trialResult.korean;
         var technique = trialResult.technique;
         var granularity = trialResult.granularity;
         var trialNum = currentTrial;
@@ -129,22 +134,25 @@
         var accuracy = stimuli === userResponse ? 1 : 0;
         var skipped = skipped || 0; // defaults to unskipped
 
-        var row = [pid, technique, granularity, trialNum,
+        var row = [pid, technique, granularity, korean, trialNum,
           stimuli, userResponse, trialStartTime,
           trialEndTime, trialDuration, accuracy, skipped
         ];
         trialData.push(row);
       }
 
+      var QN_TO_BREAK = 28;
+
       if (currentTrial < totalNumberOfTrials) {
-        if (currentTrial == 10) {
-          // take a break
+        if (currentTrial == QN_TO_BREAK) {
           var NUM_BREAKTIME_SECS = 5;
+          // take a break
           pauseScreen.start(NUM_BREAKTIME_SECS * 1000);
         }
         ACPToolKit.presentTrial(trialsData[currentTrial]);
         currentTrial += 1;
         $('.js-expt-current-trial').text(currentTrial);
+        $('.js-expt-korean').text(korean);
       } else {
         // Last trial completed
         ACPToolKit.downloadTrialResults(trialData);
