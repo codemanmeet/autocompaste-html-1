@@ -197,8 +197,160 @@
 
       var userToSeq = function(userId) {
         var userMap = {
-          P01: "AP AQ AR BP BQ BR",
-          P02: "BP BQ BR AP AQ AR"
+          P01:
+              "APM1 APM2 APM3 " +
+              "APN1 APN2 APN3 " +
+              "APO1 APO2 APO3 " +
+
+              "AQM1 AQM2 AQM3 " +
+              "AQN1 AQN2 AQN3 " +
+              "AQO1 AQO2 AQO3 " +
+
+              "ARM1 ARM2 AQM3 " +
+              "ARN1 ARN2 AQN3 " +
+              "ARO1 ARO2 AQO3 " +
+
+              "BPM1 BPM2 BPM3 " +
+              "BPN1 BPN2 BPN3 " +
+              "BPO1 BPO2 BPO3 " +
+
+              "BQM1 BQM2 BQM3 " +
+              "BQN1 BQN2 BQN3 " +
+              "BQO1 BQO2 BQO3 " +
+
+              "BRM1 BRM2 BQM3 " +
+              "BRN1 BRN2 BQN3 " +
+              "BRO1 BRO2 BQO3 "
+              ,
+
+          P02:
+              "BPM1 BPM2 BPM3 " +
+              "BPN1 BPN2 BPN3 " +
+              "BPO1 BPO2 BPO3 " +
+
+              "BQM1 BQM2 BQM3 " +
+              "BQN1 BQN2 BQN3 " +
+              "BQO1 BQO2 BQO3 " +
+
+              "BRM1 BRM2 BQM3 " +
+              "BRN1 BRN2 BQN3 " +
+              "BRO1 BRO2 BQO3 " +
+
+              "APM1 APM2 APM3 " +
+              "APN1 APN2 APN3 " +
+              "APO1 APO2 APO3 " +
+
+              "AQM1 AQM2 AQM3 " +
+              "AQN1 AQN2 AQN3 " +
+              "AQO1 AQO2 AQO3 " +
+
+              "ARM1 ARM2 AQM3 " +
+              "ARN1 ARN2 AQN3 " +
+              "ARO1 ARO2 AQO3 "
+              ,
+
+            P03:
+              "AQM1 AQM2 AQM3 " +
+              "AQN1 AQN2 AQN3 " +
+              "AQO1 AQO2 AQO3 " +
+
+              "ARM1 ARM2 AQM3 " +
+              "ARN1 ARN2 AQN3 " +
+              "ARO1 ARO2 AQO3 " +
+
+              "APM1 APM2 APM3 " +
+              "APN1 APN2 APN3 " +
+              "APO1 APO2 APO3 " +
+
+              "BQM1 BQM2 BQM3 " +
+              "BQN1 BQN2 BQN3 " +
+              "BQO1 BQO2 BQO3 " +
+
+              "BRM1 BRM2 BQM3 " +
+              "BRN1 BRN2 BQN3 " +
+              "BRO1 BRO2 BQO3 " +
+
+              "BPM1 BPM2 BPM3 " +
+              "BPN1 BPN2 BPN3 " +
+              "BPO1 BPO2 BPO3 "
+              ,
+
+          P04:
+              "BQM1 BQM2 BQM3 " +
+              "BQN1 BQN2 BQN3 " +
+              "BQO1 BQO2 BQO3 " +
+
+              "BRM1 BRM2 BQM3 " +
+              "BRN1 BRN2 BQN3 " +
+              "BRO1 BRO2 BQO3 " +
+
+              "BPM1 BPM2 BPM3 " +
+              "BPN1 BPN2 BPN3 " +
+              "BPO1 BPO2 BPO3 " +
+
+              "AQM1 AQM2 AQM3 " +
+              "AQN1 AQN2 AQN3 " +
+              "AQO1 AQO2 AQO3 " +
+
+              "ARM1 ARM2 AQM3 " +
+              "ARN1 ARN2 AQN3 " +
+              "ARO1 ARO2 AQO3 " +
+
+              "APM1 APM2 APM3 " +
+              "APN1 APN2 APN3 " +
+              "APO1 APO2 APO3 "
+              ,
+
+            P05:
+              "ARM1 ARM2 AQM3 " +
+              "ARN1 ARN2 AQN3 " +
+              "ARO1 ARO2 AQO3 " +
+
+              "APM1 APM2 APM3 " +
+              "APN1 APN2 APN3 " +
+              "APO1 APO2 APO3 " +
+
+              "AQM1 AQM2 AQM3 " +
+              "AQN1 AQN2 AQN3 " +
+              "AQO1 AQO2 AQO3 " +
+
+              "BRM1 BRM2 BQM3 " +
+              "BRN1 BRN2 BQN3 " +
+              "BRO1 BRO2 BQO3 " +
+
+              "BPM1 BPM2 BPM3 " +
+              "BPN1 BPN2 BPN3 " +
+              "BPO1 BPO2 BPO3 " +
+
+              "BQM1 BQM2 BQM3 " +
+              "BQN1 BQN2 BQN3 " +
+              "BQO1 BQO2 BQO3 "
+              ,
+
+          P06:
+              "BRM1 BRM2 BQM3 " +
+              "BRN1 BRN2 BQN3 " +
+              "BRO1 BRO2 BQO3 " +
+
+              "BPM1 BPM2 BPM3 " +
+              "BPN1 BPN2 BPN3 " +
+              "BPO1 BPO2 BPO3 " +
+
+              "BQM1 BQM2 BQM3 " +
+              "BQN1 BQN2 BQN3 " +
+              "BQO1 BQO2 BQO3 " +
+
+              "ARM1 ARM2 AQM3 " +
+              "ARN1 ARN2 AQN3 " +
+              "ARO1 ARO2 AQO3 " +
+
+              "APM1 APM2 APM3 " +
+              "APN1 APN2 APN3 " +
+              "APO1 APO2 APO3 " +
+
+              "AQM1 AQM2 AQM3 " +
+              "AQN1 AQN2 AQN3 " +
+              "AQO1 AQO2 AQO3 "
         };
         return userMap[userId];
       };
@@ -264,22 +416,32 @@
         return newArr;
       }
 
+      var convSeqToArr = function(rawData, seq) {
+        // replace start and end newlines from
+        // http://stackoverflow.com/questions/14572413/remove-line-breaks-from-start-and-end-of-string
+        var tokens = seq.replace(/^\s+|\s+$/g, '').split(' ');
+        var dataset = [];
+        for (var i = 0; i < tokens.length; i++) {
+          dataset.push(rawData[tokens[i]]);
+        }
+        return dataset;
+      };
+
       // public ---
       return {
         userToSeq: userToSeq,
-        parseUser: parseUser,
-        remap: remap
+        parseUser: parseUser, // TODO deprecate
+        convSeqToArr: convSeqToArr,
+        remap: remap  // TODO deprecate
       };
     })();
 
 
     $(document).ready(function() {
       $.get('data/experiments.json', function(data) {
-        var seq = translator.userToSeq("P02"); // trial sequence in words
-        var indexes = translator.parseUser(seq); // indexes to use
-        trialsData = translator.remap(data.experiments, indexes); // raw data
-        console.log(trialsData)
-
+        var seq = translator.userToSeq("P06"); // trial sequence in words
+        trialsData = translator.convSeqToArr(data.experiments, seq); // raw data
+        console.log(trialsData);
         currentTrial = 0;
         totalNumberOfTrials = trialsData.length;
         $('.js-expt-num-trials').text(totalNumberOfTrials);

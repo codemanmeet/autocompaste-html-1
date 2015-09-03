@@ -1,40 +1,424 @@
 {
-    "experiments": [
-        {
-            "technique": "AUTOCOMPASTE",
-            "granularity": "sentence",
-            "data_file": "data/texts.json",
-            "stimuli": "리스트 뷰 – 어댑터 뷰 Samsung Software Membership Seminar 리스트 뷰는 여러 개의 항목을 수직으로 표시하는 위젯 이다."
-        },
-        {
-            "technique": "AUTOCOMPASTE",
-            "granularity": "paragraph",
-            "data_file": "data/texts.json",
-            "stimuli": "그럼 AOP에 대해서 이야기하기에 앞서 OOP가 무엇인지 간단히 살펴보자.\nOOP라는 개념은 기존 C언어 등에서 사용되던 구조적 프로그래밍의 개념과 완전히 달랐다.\n구조적 프로그래밍에서 OOP로 넘어가면서 개발자들은 큰 혼란을 겪기도 했다고 한다.\n그렇미나 객체의 개념이나 재사용등과 같은 어려가지 개념들은 기존의 구조적 프로그래밍을 하던 사람들에게 쉽게 받아들여지지 않기도 했다고 한다.\n그렇지만 OOP의 뛰어난 효율성으로 자바는 지금과 같이 널리 사용되게 되었다. (물론 효율성 하나만 가지고 널리 사용되게 된건 아니다.)"
-        },
-        {
-            "technique": "AUTOCOMPASTE",
-            "granularity": "phrase",
-            "data_file": "data/texts.json",
-            "stimuli": "number of positive charges"
-        },
-        {
-            "technique": "TRADITIONAL",
-            "granularity": "sentence",
-            "data_file": "data/texts.json",
-            "stimuli": "What is acceptor atoms?"
-        },
-        {
-            "technique": "TRADITIONAL",
-            "granularity": "paragraph",
-            "data_file": "data/texts.json",
-            "stimuli": "What is AC coupling? Circuit that passes an AC signal while blocking a DC voltage."
-        },
-        {
-            "technique": "TRADITIONAL",
-            "granularity": "phrase",
-            "data_file": "data/texts.json",
-            "stimuli": "number of positive charges"
-        }
-    ]
+  "experiments": {
+    "APM1": {
+      "technique": "AUTOCOMPASTE",
+      "granularity": "sentence",
+      "korean": 100,
+      "data_file": "data/texts.json",
+      "stimuli": "리스트 뷰 – 어댑터 뷰 samsung software membership seminar 리스트 뷰는 여러 개의 항목을 수직으로 표시하는 위젯 이다."
+    },
+    "APM2": {
+      "technique": "AUTOCOMPASTE",
+      "granularity": "paragraph",
+      "korean": 100,
+      "data_file": "data/texts.json",
+      "stimuli": "그럼 AOP에 대해서 이야기하기에 앞서 OOP가 무엇인지 간단히 살펴보자.\nOOP라는 개념은 기존 C언어 등에서 사용되던 구조적 프로그래밍의 개념과 완전히 달랐다.\n구조적 프로그래밍에서 OOP로 넘어가면서 개발자들은 큰 혼란을 겪기도 했다고 한다.\n그렇미나 객체의 개념이나 재사용등과 같은 어려가지 개념들은 기존의 구조적 프로그래밍을 하던 사람들에게 쉽게 받아들여지지 않기도 했다고 한다.\n그렇지만 OOP의 뛰어난 효율성으로 자바는 지금과 같이 널리 사용되게 되었다. (물론 효율성 하나만 가지고 널리 사용되게 된건 아니다.)"
+    },
+    "APM3": {
+      "technique": "AUTOCOMPASTE",
+      "granularity": "sentence",
+      "korean": 100,
+      "data_file": "data/texts.json",
+      "stimuli": ""
+    },
+
+    "AQM1": {
+      "technique": "AUTOCOMPASTE",
+      "granularity": "paragraph",
+      "korean": 100,
+      "data_file": "data/texts.json",
+      "stimuli": ""
+    },
+    "AQM2": {
+      "technique": "AUTOCOMPASTE",
+      "granularity": "paragraph",
+      "korean": 100,
+      "data_file": "data/texts.json",
+      "stimuli": ""
+    },
+    "AQM3": {
+      "technique": "AUTOCOMPASTE",
+      "granularity": "paragraph",
+      "korean": 100,
+      "data_file": "data/texts.json",
+      "stimuli": ""
+    },
+
+    "ARM1": {
+      "technique": "AUTOCOMPASTE",
+      "granularity": "phrase",
+      "korean": 100,
+      "data_file": "data/texts.json",
+      "stimuli": ""
+    },
+    "ARM2": {
+      "technique": "AUTOCOMPASTE",
+      "granularity": "phrase",
+      "korean": 100,
+      "data_file": "data/texts.json",
+      "stimuli": ""
+    },
+    "ARM3": {
+      "technique": "AUTOCOMPASTE",
+      "granularity": "phrase",
+      "korean": 100,
+      "data_file": "data/texts.json",
+      "stimuli": ""
+    },
+
+    "BPM1": {
+      "technique": "TRADITIONAL",
+      "granularity": "sentence",
+      "korean": 100,
+      "data_file": "data/texts.json",
+      "stimuli": ""
+    },
+    "BPM2": {
+      "technique": "TRADITIONAL",
+      "granularity": "sentence",
+      "korean": 100,
+      "data_file": "data/texts.json",
+      "stimuli": ""
+
+    },
+    "BPM3": {
+      "technique": "TRADITIONAL",
+      "granularity": "sentence",
+      "korean": 100,
+      "data_file": "data/texts.json",
+      "stimuli": ""
+
+    },
+
+    "BQM1": {
+      "technique": "TRADITIONAL",
+      "granularity": "paragraph",
+      "korean": 100,
+      "data_file": "data/texts.json",
+      "stimuli": ""
+
+    },
+    "BQM2": {
+      "technique": "TRADITIONAL",
+      "granularity": "paragraph",
+      "korean": 100,
+      "data_file": "data/texts.json",
+      "stimuli": ""
+
+    },
+    "BQM3": {
+      "technique": "TRADITIONAL",
+      "granularity": "paragraph",
+      "korean": 100,
+      "data_file": "data/texts.json",
+      "stimuli": ""
+    },
+
+    "BRM1": {
+      "technique": "TRADITIONAL",
+      "granularity": "phrase",
+      "korean": 100,
+      "data_file": "data/texts.json",
+      "stimuli": ""
+
+    },
+    "BRM2": {
+      "technique": "TRADITIONAL",
+      "granularity": "phrase",
+      "korean": 100,
+      "data_file": "data/texts.json",
+      "stimuli": ""
+
+    },
+    "ARM3": {
+      "technique": "TRADITIONAL",
+      "granularity": "phrase",
+      "korean": 100,
+      "data_file": "data/texts.json",
+      "stimuli": ""
+
+    },
+
+    "/": "----------------------------------",
+
+    "APN1": {
+      "technique": "AUTOCOMPASTE",
+      "granularity": "sentence",
+      "korean": 50,
+      "data_file": "data/texts.json",
+      "stimuli": "리스트 뷰 – 어댑터 뷰 samsung software membership seminar 리스트 뷰는 여러 개의 항목을 수직으로 표시하는 위젯 이다."
+    },
+    "APN2": {
+      "technique": "AUTOCOMPASTE",
+      "granularity": "paragraph",
+      "korean": 50,
+      "data_file": "data/texts.json",
+      "stimuli": "그럼 AOP에 대해서 이야기하기에 앞서 OOP가 무엇인지 간단히 살펴보자.\nOOP라는 개념은 기존 C언어 등에서 사용되던 구조적 프로그래밍의 개념과 완전히 달랐다.\n구조적 프로그래밍에서 OOP로 넘어가면서 개발자들은 큰 혼란을 겪기도 했다고 한다.\n그렇미나 객체의 개념이나 재사용등과 같은 어려가지 개념들은 기존의 구조적 프로그래밍을 하던 사람들에게 쉽게 받아들여지지 않기도 했다고 한다.\n그렇지만 OOP의 뛰어난 효율성으로 자바는 지금과 같이 널리 사용되게 되었다. (물론 효율성 하나만 가지고 널리 사용되게 된건 아니다.)"
+    },
+    "APN3": {
+      "technique": "AUTOCOMPASTE",
+      "granularity": "sentence",
+      "korean": 50,
+      "data_file": "data/texts.json",
+      "stimuli": ""
+    },
+
+    "AQN1": {
+      "technique": "AUTOCOMPASTE",
+      "granularity": "paragraph",
+      "korean": 50,
+      "data_file": "data/texts.json",
+      "stimuli": ""
+    },
+    "AQN2": {
+      "technique": "AUTOCOMPASTE",
+      "granularity": "paragraph",
+      "korean": 50,
+      "data_file": "data/texts.json",
+      "stimuli": ""
+    },
+    "AQN3": {
+      "technique": "AUTOCOMPASTE",
+      "granularity": "paragraph",
+      "korean": 50,
+      "data_file": "data/texts.json",
+      "stimuli": ""
+    },
+
+    "ARN1": {
+      "technique": "AUTOCOMPASTE",
+      "granularity": "phrase",
+      "korean": 50,
+      "data_file": "data/texts.json",
+      "stimuli": ""
+    },
+    "ARN2": {
+      "technique": "AUTOCOMPASTE",
+      "granularity": "phrase",
+      "korean": 50,
+      "data_file": "data/texts.json",
+      "stimuli": ""
+    },
+    "ARN3": {
+      "technique": "AUTOCOMPASTE",
+      "granularity": "phrase",
+      "korean": 50,
+      "data_file": "data/texts.json",
+      "stimuli": ""
+    },
+
+    "BPN1": {
+      "technique": "TRADITIONAL",
+      "granularity": "sentence",
+      "korean": 50,
+      "data_file": "data/texts.json",
+      "stimuli": ""
+    },
+    "BPN2": {
+      "technique": "TRADITIONAL",
+      "granularity": "sentence",
+      "korean": 50,
+      "data_file": "data/texts.json",
+      "stimuli": ""
+
+    },
+    "BPN3": {
+      "technique": "TRADITIONAL",
+      "granularity": "sentence",
+      "korean": 50,
+      "data_file": "data/texts.json",
+      "stimuli": ""
+
+    },
+
+    "BQN1": {
+      "technique": "TRADITIONAL",
+      "granularity": "paragraph",
+      "korean": 50,
+      "data_file": "data/texts.json",
+      "stimuli": ""
+
+    },
+    "BQN2": {
+      "technique": "TRADITIONAL",
+      "granularity": "paragraph",
+      "korean": 50,
+      "data_file": "data/texts.json",
+      "stimuli": ""
+
+    },
+    "BQN3": {
+      "technique": "TRADITIONAL",
+      "granularity": "paragraph",
+      "korean": 50,
+      "data_file": "data/texts.json",
+      "stimuli": ""
+    },
+
+    "BRN1": {
+      "technique": "TRADITIONAL",
+      "granularity": "phrase",
+      "korean": 50,
+      "data_file": "data/texts.json",
+      "stimuli": ""
+
+    },
+    "BRN2": {
+      "technique": "TRADITIONAL",
+      "granularity": "phrase",
+      "korean": 50,
+      "data_file": "data/texts.json",
+      "stimuli": ""
+
+    },
+    "BRN3": {
+      "technique": "TRADITIONAL",
+      "granularity": "phrase",
+      "korean": 50,
+      "data_file": "data/texts.json",
+      "stimuli": ""
+
+    },
+
+    "/": "----------------------------------",
+
+    "APO1": {
+      "technique": "AUTOCOMPASTE",
+      "granularity": "sentence",
+      "korean": 20,
+      "data_file": "data/texts.json",
+      "stimuli": "리스트 뷰 – 어댑터 뷰 samsung software membership seminar 리스트 뷰는 여러 개의 항목을 수직으로 표시하는 위젯 이다."
+    },
+    "APO2": {
+      "technique": "AUTOCOMPASTE",
+      "granularity": "paragraph",
+      "korean": 20,
+      "data_file": "data/texts.json",
+      "stimuli": "그럼 AOP에 대해서 이야기하기에 앞서 OOP가 무엇인지 간단히 살펴보자.\nOOP라는 개념은 기존 C언어 등에서 사용되던 구조적 프로그래밍의 개념과 완전히 달랐다.\n구조적 프로그래밍에서 OOP로 넘어가면서 개발자들은 큰 혼란을 겪기도 했다고 한다.\n그렇미나 객체의 개념이나 재사용등과 같은 어려가지 개념들은 기존의 구조적 프로그래밍을 하던 사람들에게 쉽게 받아들여지지 않기도 했다고 한다.\n그렇지만 OOP의 뛰어난 효율성으로 자바는 지금과 같이 널리 사용되게 되었다. (물론 효율성 하나만 가지고 널리 사용되게 된건 아니다.)"
+    },
+    "APO3": {
+      "technique": "AUTOCOMPASTE",
+      "granularity": "sentence",
+      "korean": 20,
+      "data_file": "data/texts.json",
+      "stimuli": ""
+    },
+
+    "AQO1": {
+      "technique": "AUTOCOMPASTE",
+      "granularity": "paragraph",
+      "korean": 20,
+      "data_file": "data/texts.json",
+      "stimuli": ""
+    },
+    "AQO2": {
+      "technique": "AUTOCOMPASTE",
+      "granularity": "paragraph",
+      "korean": 20,
+      "data_file": "data/texts.json",
+      "stimuli": ""
+    },
+    "AQO3": {
+      "technique": "AUTOCOMPASTE",
+      "granularity": "paragraph",
+      "korean": 20,
+      "data_file": "data/texts.json",
+      "stimuli": ""
+    },
+
+    "ARO1": {
+      "technique": "AUTOCOMPASTE",
+      "granularity": "phrase",
+      "korean": 20,
+      "data_file": "data/texts.json",
+      "stimuli": ""
+    },
+    "ARO2": {
+      "technique": "AUTOCOMPASTE",
+      "granularity": "phrase",
+      "korean": 20,
+      "data_file": "data/texts.json",
+      "stimuli": ""
+    },
+    "ARO3": {
+      "technique": "AUTOCOMPASTE",
+      "granularity": "phrase",
+      "korean": 20,
+      "data_file": "data/texts.json",
+      "stimuli": ""
+    },
+
+    "BPO1": {
+      "technique": "TRADITIONAL",
+      "granularity": "sentence",
+      "korean": 20,
+      "data_file": "data/texts.json",
+      "stimuli": ""
+    },
+    "BPO2": {
+      "technique": "TRADITIONAL",
+      "granularity": "sentence",
+      "korean": 20,
+      "data_file": "data/texts.json",
+      "stimuli": ""
+
+    },
+    "BPO3": {
+      "technique": "TRADITIONAL",
+      "granularity": "sentence",
+      "korean": 20,
+      "data_file": "data/texts.json",
+      "stimuli": ""
+
+    },
+
+    "BQO1": {
+      "technique": "TRADITIONAL",
+      "granularity": "paragraph",
+      "korean": 20,
+      "data_file": "data/texts.json",
+      "stimuli": ""
+
+    },
+    "BQO2": {
+      "technique": "TRADITIONAL",
+      "granularity": "paragraph",
+      "korean": 20,
+      "data_file": "data/texts.json",
+      "stimuli": ""
+
+    },
+    "BQO3": {
+      "technique": "TRADITIONAL",
+      "granularity": "paragraph",
+      "korean": 20,
+      "data_file": "data/texts.json",
+      "stimuli": ""
+    },
+
+    "BRO1": {
+      "technique": "TRADITIONAL",
+      "granularity": "phrase",
+      "korean": 20,
+      "data_file": "data/texts.json",
+      "stimuli": ""
+
+    },
+    "BRO2": {
+      "technique": "TRADITIONAL",
+      "granularity": "phrase",
+      "korean": 20,
+      "data_file": "data/texts.json",
+      "stimuli": ""
+
+    },
+    "ARO3": {
+      "technique": "TRADITIONAL",
+      "granularity": "phrase",
+      "korean": 20,
+      "data_file": "data/texts.json",
+      "stimuli": ""
+
+    }
+  }
 }
