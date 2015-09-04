@@ -1,3 +1,46 @@
+Study of AutoComPaste method against traditional copy-paste in varying mixtures of Korean and English
+========================================================================
+
+## Background
+
+This is a study into the performance of AutoComPaste with respect to various languages of Korean Hangeul mixed with English.  This is common in the Korean tech scene.
+
+## Prerequisites
+
+Taking the test requires a both a Hangeul and QUERTY keyboard layouts and input.
+
+## Utilities
+
+Utilities are located in the util folder, and run with Node.JS.
+
+A utility comparing the English-Korean language ratio using Regexes is available, and might be used at a later date.
+
+## Modifications
+
+- Added in break page when doing experiments in-between
+- Translations inserted from Google translate of literal meanings in Hangeul.  This is for the additional benefit of making native Korean users more comfortable with using the system.
+- Added check to ensure user is correctly input before conducting experiment.  This is necessary as user ID is tied to a fixed question order, pre-determined by a JSON object.
+- Added option to skip if irritating
+- Built-in hash system.  Inputs converted to JSON, and reordered using fixed order.
+- Fixed unicode inputs bug, where non-ASCII inputs were turned into symbol garbage.  This was done by running `escape()` on newlines only.
+- Instructional videos filmed and included.
+
+## Remote website
+
+Accessible via
+
+## Credit
+
+Initial base by Yang Shun and Yong Jie, as appended below.
+
+> TONG Haowen Joel
+> \@myrtletree33
+> me <at> joeltong <dot> org
+> Year 4, Computer Engineering Senior
+> National University of Singapore
+
+------------------------------------------------------------
+
 ## AutoComPaste HTML
 
 This repository consists of a basic experiment interface for conducting a copying and pasting experiment comparing two techniques: 1) AutoComPaste and 2) Traditional Copying and Pasting using keyboard shortcuts (Ctrl-C, Ctrl-V). You are to modify the code to suit your experimental design.
@@ -127,58 +170,58 @@ Every page includes the library `ACPToolKit.js`, which provides some common util
 
 - `getCurrentParticipantId ()`
 
-	**Returns:** 
+	**Returns:**
 	- `participant_id`: The current participant ID value.
-	
+
 	**Description:**
 
 	 If the participant ID has not been set, the user will be prompted to enter a string value.
-	
+
 - `clearParticipantId ()`
-	
+
 	Clears the `localStorage` of the `pid` value.
 
 - `downloadFormData (formResponses, type)`
 
-	**Parameters:**	
+	**Parameters:**
 
 	- `formResponses`: An array of objects `{ name: <label>, value: <value>}`.
 	- `type`: A string that will be appended to the file name of the generated CSV.
-	
+
 	**Description:**
-	
+
 	This function generate a CSV file consisting of a row of headers and a row of values
 	from the array of objects passed in. The `name` keys of the objects will form the row 	of	headers and the `value` keys will form the row of values. This method is being used 	by the Pre-Experiment Questionnaire and Post-Experiment Questionnaire pages. A CSV file 	is generated that will be downloaded by the user's browser.
-	
+
 
 - `downloadTrialResults (data)`
 
-	**Parameters:**	
+	**Parameters:**
 
 	- `data`: A two-dimensional array where each element in the array should be a number or a string.
-	
+
 	**Description:**
-	
+
 	This function takes in a two-dimensional array that represents the trial results and 	generates a CSV file out of it. The header row has to be the first array in the two-dimensional array.
 
 - `presentTrial (options)`
 
-	**Parameters:**	
+	**Parameters:**
 
 	- `options`: An object that recognizes the following keys:
 		- `technique`: The technique for the current trial, either **"AUTOCOMPASTE"** or **"TRADITIONAL"**. The interface will enable/disable the AutoComPaste functionality.
 		- `granularity`: Level of granularity of the stimuli of the current trial. one of the three values **"sentence"**, **"phrase"**, or **"paragraph"**. Note that this value is only used to update the 			interface for displaying of the conditions.
 		- `data_file`: The path to a JSON file consisting of a data object. The format of the data object will be explained in detail later.
 		- `stimuli`: The stimuli for a trial. There is no checking done by `ACPToolkit.js` to ensure that the stimuli here is consistent with the `granularity` given above.
-	
+
 	**Description:**
-	
+
 	Upon invoking of this function, the experiment interface will be cleared and the Text Editor and Article windows will be showed. The number of windows being showed depends on the number of objects in the JSON file referenced by `data_file`. **Note:** This method is only available on the `experiment.html` page.
-	
+
 
 - `getCurrentTrialState ()`
 
-	**Returns:**	
+	**Returns:**
 
 	- `options`: An object containing the following keys:
 		- `technique`: The `technique` value for the current trial.
@@ -189,12 +232,12 @@ Every page includes the library `ACPToolKit.js`, which provides some common util
 		- `end_time`: The ending time of the current trial, given in milliseconds since midnight 01 January, 1970 UTC.
 		- `duration`: The duration of the current trial, given in milliseconds.
 		- `user_response`: The text entered in the Text Editor window.
-	
+
 	**Description:**
-	
+
 	Returns the state of the current trial. This method has to called to retrieve the current trial's state before the next `presentTrial()` is called or else the data will be overwritten. **Note:** This method is only available on the `experiment.html` page.
 
-	
+
 ##### Data Object File
 
 
@@ -213,7 +256,7 @@ Paths to data object files are being passed into the `ACPToolKit.presentTrial()`
     ...
 ]
 ```
-    
+
 Each object in the array will be transformed into a window and displayed in the interface, with `title` corresponding to the window title and text content loaded from the file located at `url`. Refer to `data/texts.json` for an example of the data object file. Each article should be in the `.txt` format.
 
 
