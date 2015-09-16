@@ -16,6 +16,10 @@ html {
     line-height: 1.4;
 }
 
+.limit-width {
+  max-width: 80%;
+}
+
 /*
  * Remove text-shadow in selection highlight:
  * https://twitter.com/miketaylr/status/12228805301
