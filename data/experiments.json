@@ -236,7 +236,7 @@
       "granularity": "paragraph",
       "korean": 50,
       "data_file": "data/texts.json",
-      "stimuli": "15. 1. 리스트 뷰 – 항목 선택 Samsung Software Membership Seminar void onItemClick(AdapterView<?> parent, View view, int position, long id) parent – 리스트뷰 객체 view – 클릭된 항목 뷰 position – 클릭된 항목의 index id – 클릭된 항목의 id void setOnItemClickListener(AdapterView.OnItemClickListener listener)"
+      "stimuli": "그렇지만 OOP의 뛰어난 효율성으로 자바는 지금과 같이 널리 사용되게 되었다. (물론 효율성 하나만 가지고 널리 사용되게 된건 아니다.)"
 
     },
     "BQN2": {
